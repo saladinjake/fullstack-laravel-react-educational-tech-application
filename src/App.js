@@ -5,6 +5,11 @@ import {
   Route 
 } from "react-router-dom";
 
+//import components - 
+import ScrollToTop from "helper/ScrollToTop";
+import { GlobalStyle } from "components/common/styles/global.js";
+
+
 
 import { 
   Toaster 
@@ -30,9 +35,11 @@ function App() {
           },
         }}
       />
+      <GlobalStyle />
+      <ScrollToTop />
       
       <Switch>
-        
+         
         <div>Hello router</div>
       </Switch>
     </Router>
