@@ -1,5 +1,4 @@
 export const colors = {
-
     bg1: "#300030",
     bg2: "#F6F9FF",
     gr_bg: "linear-gradient(90deg, #59002d 0%, #900048 100%)",
@@ -28,8 +27,6 @@ export const colors = {
 }
 
 export const fonts = {
-
     roboto: "'Roboto', sans-serif",
     poppins: "'Poppins', sans-serif",
-
 }
