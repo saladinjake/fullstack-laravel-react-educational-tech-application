@@ -49,7 +49,7 @@ export const Styles = styled.div`
                 &:before {
                     position: absolute;
                     content : "";
-                    background : ${colors.text1};
+                    background : ${colors.bg1};
                     width: 1px;
                     height: 25px;
                     top: -4px;
@@ -144,25 +144,25 @@ export const Styles = styled.div`
 .mb-sidebar {
     background: #ffffff;
     height: 100%;
-    width: 320px;
+    width: 520px;
     position: fixed;
     top : 0;
-    left: -320px;
+    left: -520px;
     overflow-y: auto;
     z-index: 9999;
     transition: all 400ms cubic-bezier(0.785,0.135,0.15,0.86);
     display: none;
     .mb-sidebar-heading {
-        background: ${colors.gr_bg};
+        background: ${colors.bg1};
         padding: 25px;
         h5 {
-            color: #ffffff;
+            color: #000;
             text-transform: uppercase;
         }
         a#close-mb-sidebar {
             i {
                 font-size : 22px;
-                color : #ffffff;
+                color : #000;
             }
         }
     }

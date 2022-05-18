@@ -15,4 +15,4 @@ const roleNavigator = (role) => {
   }
   return route;
 };
-export default roleToRoute;
+export default roleNavigator;

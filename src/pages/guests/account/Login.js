@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import HeaderTwo from "../../../components/HeaderTwo";
+import HeaderTwo from "../../../components/Header";
 import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
-import FooterTwo from "../../../components/FooterTwo";
+import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/account.js";
 import { useHistory } from "react-router-dom";
 import * as Yup from "yup";

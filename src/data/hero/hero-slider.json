@@ -5,16 +5,17 @@
         "uniqClass": "slider-box slider-box1",
         "title": "",
         "desc": "Learn new skills. Become better.",
-        "btnOneLink": "course-grid",
-        "btnTwoLink": "contact"
+        "btnOneLink": "login",
+        "btnTwoLink": "register"
     },
+    
     {
         "id": "2",
         "backgroundImage": "qslider-2.jpg",
         "uniqClass": "slider-box slider-box2 text-right",
         "title": "",
         "desc": "Ems helps you succeed",
-        "btnOneLink": "course-grid",
-        "btnTwoLink": "contact"
+        "btnOneLink": "login",
+        "btnTwoLink": "register"
     }
 ]

@@ -123,6 +123,7 @@ export const GlobalStyle = createGlobalStyle`
     button:hover {
         text-decoration: none;
         outline        : none;
+       
     }
 
     a,

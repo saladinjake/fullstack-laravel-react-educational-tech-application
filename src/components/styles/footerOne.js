@@ -12,7 +12,7 @@ export const Styles = styled.div`
         &:before {
             position  : absolute;
             content   : "";
-            background: ${colors.bg1};
+            background: #fff;
             opacity   : 0.98;
             width     : 100%;
             height    : 100%;

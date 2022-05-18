@@ -7,6 +7,7 @@ import { Styles } from "./styles/heroSlider.js";
 
 class HeroSlider extends Component {
     render() {
+        
         const settings = {
             slidesPerView: 1,
             loop: true,
@@ -53,8 +54,8 @@ class HeroSlider extends Component {
                                                                 <h1>{data.desc}</h1>
                                                             </div>
                                                             <div className="slider-btn">
-                                                                <Link className="slider-btn1" to={`/${data.btnOneLink}`}>Our Courses</Link>
-                                                                <Link className="slider-btn2" to={`/${data.btnTwoLink}`}>Get Started</Link>
+                                                                <Link className="slider-btn1" to={`/${data.btnOneLink}`}>Login</Link>
+                                                                <Link className="slider-btn2" to={`/${data.btnTwoLink}`}>Register</Link>
                                                             </div>
                                                         </div>
                                                     </Col>

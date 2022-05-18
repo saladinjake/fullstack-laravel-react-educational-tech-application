@@ -6,7 +6,7 @@ export const Styles = styled.div`
         background-size    : cover;
         background-position: center;
         background-repeat  : no-repeat;
-        height             : 700px;
+        height             : 400px;
         position           : relative;
 
         &::before {
@@ -21,14 +21,7 @@ export const Styles = styled.div`
         }
 
         .round-shape {
-            background-position: bottom;
-            background-repeat  : no-repeat;
-            background-size    : contain;
-            position           : absolute;
-            bottom             : 0;
-            left               : 0;
-            width              : 100%;
-            height             : 100%;
+            
         }
 
         .hero-table {

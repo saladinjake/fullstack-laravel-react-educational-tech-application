@@ -15,7 +15,7 @@ export const Styles = styled.div`
                         display : block;
                         overflow: hidden;
                         position: relative;
-                        height  : 700px;
+                        height  : 400px;
 
                         img.slider-image {
                             width     : auto;
@@ -75,7 +75,7 @@ export const Styles = styled.div`
                                     a.slider-btn1 {
                                         font-size : 14px;
                                         color     : #fff;
-                                        background: ${colors.gr_bg};
+                                        background: "#000";
                                         display   : inline-block;
                                         width     : 145px;
                                         height    : 40px;
@@ -84,7 +84,7 @@ export const Styles = styled.div`
                                         border-radius : 5px;
 
                                         &:hover {
-                                            background: ${colors.gr_bg2};
+                                            background: green;
                                         }
                                     }
 
@@ -92,7 +92,7 @@ export const Styles = styled.div`
                                         font-size : 14px;
                                         color     : #fff;
                                         display   : inline-block;
-                                        background: ${colors.bg1};
+                                        background: green;
                                         width     : 145px;
                                         height    : 40px;
                                         text-align: center;
@@ -101,9 +101,9 @@ export const Styles = styled.div`
                                         margin-left: 15px;
 
                                         &:hover {
-                                            background: ${colors.gr_bg};
+                                            background: #eaeaea;
                                             border    : none;
-                                            color     : #ffffff;
+                                            color     : #000;
                                         }
                                     }
                                 }

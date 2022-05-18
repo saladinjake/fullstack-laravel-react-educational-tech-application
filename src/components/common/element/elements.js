@@ -1,7 +1,7 @@
 export const colors = {
-    bg1: "#000",
+    bg1: "#f5f5f5",
     bg2: "#F6F9FF",
-    gr_bg: "linear-gradient(90deg, #59002d 0%, #900048 100%)",
+    gr_bg: "green",
     gr_bg2: "linear-gradient(90deg, #900048 0%, #ff0066 100%)",
     copy_bg: "#122340",
     blue: "#2c97ea",

@@ -4,20 +4,20 @@
         "uniqClass": "box-icon box1",
         "boxIcon": "flaticon-thumbs-like",
         "title": "Popular Courses",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "subTitle": "Find Courses that grow your career path."
     },
     {
         "id": "2",
         "uniqClass": "box-icon box2",
         "boxIcon": "flaticon-reading",
-        "title": "Modern Library",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "title": "Professional Growth",
+        "subTitle": " Follow through with professional courses ."
     },
     {
         "id": "3",
         "uniqClass": "box-icon box3",
         "boxIcon": "flaticon-teacher",
-        "title": "Qualified Teacher",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "title": "Job Seeker",
+        "subTitle": "We will help you land your dream job"
     }
 ]

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Datas from '../../../data/404/error.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-import HeaderTwo from '../../../components/HeaderTwo';
-import FooterTwo from '../../../components/FooterTwo';
+import Header from '../../../components/Header';
+import FooterTwo from '../../../components/Footer';
 import { Styles } from './styles/pageNotFound.js';
 
 class PageNotFound extends Component {
@@ -14,10 +14,10 @@ class PageNotFound extends Component {
                 <div className="main-wrapper error-page">
 
                     {/* Header 2 */}
-                    <HeaderTwo />
+                    <Header />
 
                     {/* 404 Area */}
-                    <section className="error-area" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${Datas.backgroundImage})` }}>
+                    <section className="error-area" >
                         <Container>
                             <Row>
                                 <Col md="12">
