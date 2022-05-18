@@ -10,7 +10,8 @@ import ScrollToTop from "helper/ScrollToTop";
 import { GlobalStyle } from "components/common/styles/global.js";
 
 
-
+import HomeOne from "HomeOne";
+import HomeTwo from "HomeTwo";
 import { 
   Toaster 
 } from "react-hot-toast";
@@ -39,8 +40,16 @@ function App() {
       <ScrollToTop />
       
       <Switch>
-         
-        <div>Hello router</div>
+          <Route
+          exact
+          path={`${process.env.PUBLIC_URL + "/"}`}
+          component={HomeOne}
+        />
+
+        <Route
+          path={`${process.env.PUBLIC_URL + "/home-two"}`}
+          component={HomeTwo}
+        />
       </Switch>
     </Router>
   );

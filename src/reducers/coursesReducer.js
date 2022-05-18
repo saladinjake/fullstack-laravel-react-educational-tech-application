@@ -1,4 +1,4 @@
-import {
+  import {
     GET_COURSES,
     COURSE_ERROR,
     SET_LOADING,
