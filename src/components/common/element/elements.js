@@ -1,5 +1,5 @@
 export const colors = {
-    bg1: "#300030",
+    bg1: "#000",
     bg2: "#F6F9FF",
     gr_bg: "linear-gradient(90deg, #59002d 0%, #900048 100%)",
     gr_bg2: "linear-gradient(90deg, #900048 0%, #ff0066 100%)",

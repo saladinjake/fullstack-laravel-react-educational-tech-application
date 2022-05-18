@@ -46,7 +46,7 @@ function FooterTwo() {
     return (
         <Styles>
             {/* Footer Two */}
-            <footer className="footer2" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${Datas.backgroundImage})` }}>
+            <footer className="footer2" style={{ background: `#eaeaea` }}>
                 <Container>
                     <Row>
                         <Col md="3">

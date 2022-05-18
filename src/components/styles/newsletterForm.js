@@ -3,13 +3,14 @@ import { colors } from "../common/element/elements.js";
 
 export const Styles = styled.div`
     .newsletter-form-area {
-        background-color: ${colors.bg1};
+        background-color: #000;
 
         .newsletter-container {
             position: relative;
 
             .newsletter-box {
-                background: ${colors.gr_bg};
+                 background-color: #000;
+
                 padding   : 37px 40px 40px;
                 border-radius : 5px;
                 position: absolute;

@@ -159,7 +159,7 @@ export const Styles = styled.div`
 
     .copyright-area {
         padding   : 35px 0 38px;
-        background: ${colors.copy_bg};
+        background: #222;
 
         .copy-text {
             p {
