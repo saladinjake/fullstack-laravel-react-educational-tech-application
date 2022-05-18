@@ -8,6 +8,25 @@ import {
   CLEAR_CART
 } from "./types";
 
+import { getCourses } from "services/course";
+
+
+
+
+export const fetchCourses =  () => async (dispatch) => {
+ try {
+   const res = await getCourses();
+   dispatch({
+     type: GET_COURSES,
+     payload: res.data.data.courses,
+   });
+ } catch (err) {
+   dispatch({
+     type: COURSE_ERROR,
+     payload: "An Error occured",
+   });
+ }
+};
 
 export const addToCart = (id) => async (dispatch) => {
   dispatch({
