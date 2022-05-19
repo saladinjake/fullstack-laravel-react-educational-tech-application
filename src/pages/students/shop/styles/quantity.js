@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import { colors } from '../../../../components/common/element/elements.js';
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: style definition for quantity selector
+
+*/
+
 export const Styles = styled.div`
     .product-qty {
         margin-bottom : 20px;

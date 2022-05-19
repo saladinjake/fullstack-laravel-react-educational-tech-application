@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/pagetitle.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: page title component
 
+*/
 export class PageTitle extends Component {
     state = {
         backgroundImage: 'qbreadcrumb.jpg',

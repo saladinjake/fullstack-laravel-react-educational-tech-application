@@ -1,5 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../../../../components/common/element/elements.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: style definition 404 page
+
+*/
 
 export const Styles = styled.div`
     .error-page {

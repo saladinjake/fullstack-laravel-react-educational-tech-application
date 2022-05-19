@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { colors } from "components/common/element/elements.js";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: style definition for checkout page
+
+*/
+
 export const Styles = styled.div`
   .about-page {
     padding: 70px 0 65px;

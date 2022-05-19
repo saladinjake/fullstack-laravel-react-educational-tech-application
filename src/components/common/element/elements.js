@@ -1,3 +1,11 @@
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: global colors and fonts
+
+*/
 export const colors = {
     bg1: "#f5f5f5",
     bg2: "#F6F9FF",

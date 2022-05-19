@@ -1,3 +1,11 @@
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: setting types
+
+*/
 //logs
 export const GET_COURSES = 'GET_COURSES';
 export const ADD_COURSE ='ADD_COURSE';

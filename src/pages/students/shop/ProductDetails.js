@@ -11,6 +11,16 @@ import ReviewForm from '../../guests/courses/components/ReviewForm';
 import FooterTwo from '../../../components/Footer';
 import { Styles } from './styles/productDetails.js';
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: Product detail 
+*@params: 
+*@usage: <ProductDetails />
+*/
 class ProductDetails extends Component {
     render() {
         const settings = {

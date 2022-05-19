@@ -14,6 +14,15 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { fetchCourses, addToCart } from "actions/cartActions";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: course detail page
+
+*/
+
 const CourseDetails = ({ match, cart: { cart }, addToCart, fetchCourses }) => {
   const [coursedetails, setCourseDetails] = useState({});
   // eslint-disable-next-line

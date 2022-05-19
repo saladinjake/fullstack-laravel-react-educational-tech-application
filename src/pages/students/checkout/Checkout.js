@@ -11,6 +11,16 @@ import { enrollCourses } from "services/enrollment.js";
 import toast from "react-hot-toast";
 import { useHistory } from "react-router-dom";
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: page checkout
+
+*/
+
 const Checkout = ({ cart: { cart, total }, auth: { user } }) => {
   let history = useHistory();
   const [loading, setLoading] = useState(false);

@@ -1,5 +1,12 @@
 import React from "react";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: spinner loader
 
+*/
 const Loader = ({ width }) => {
   return (
     <div className="loader" style={{ width: `${width}px` }}>

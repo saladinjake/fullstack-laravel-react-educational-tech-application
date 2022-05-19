@@ -7,7 +7,17 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
 
-
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: state manager through out the app
+*@params: Object  rootReducer
+*@params: Object  initialState
+*@params: Function composeWithDevTools
+*@usage: <Provider store={store}></Provider>
+*/
 const initialState = {};
 const middleware = [thunk];
 

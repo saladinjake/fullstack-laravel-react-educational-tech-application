@@ -6,6 +6,15 @@ import Header from '../../../components/Header';
 import FooterTwo from '../../../components/Footer';
 import { Styles } from './styles/pageNotFound.js';
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: 404 page
+
+*/
+
 class PageNotFound extends Component {
     render() {
         return (

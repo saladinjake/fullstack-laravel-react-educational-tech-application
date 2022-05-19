@@ -11,6 +11,16 @@ import toast from "react-hot-toast";
 import { Formik } from "formik";
 import { registerLearner } from "services/auth";
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: register page
+
+*/
+
 const Register = () => {
   let history = useHistory();
   const [loading, setLoading] = useState(false);

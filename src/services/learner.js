@@ -1,6 +1,14 @@
 /* eslint-disable no-unused-vars */
 import axios from "services/axiosConfig";
-
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: api request to perform token authourization
+*@params: null
+*@usage: async function Attempt(data){ await getAuthProfile()}
+*/
 export const getAuthProfile = () => {
   let request = axios.get("enrollments/me");
   return request.then((response) => {

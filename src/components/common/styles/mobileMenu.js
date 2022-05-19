@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../element/elements.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: mobile menu styles
 
+*/
 export const Styles = styled.div`
 .mobile-menu-area {
     background : ${colors.bg1};

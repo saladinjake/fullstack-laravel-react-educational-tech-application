@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { colors } from "../element/elements.js";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: sticky menu style definition
+
+*/
 export const Styles = styled.div`
     .sticky-menu {
         display: none;

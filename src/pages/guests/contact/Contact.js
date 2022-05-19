@@ -5,6 +5,15 @@ import { BreadcrumbBox } from '../../../components/common/Breadcrumb';
 import FooterTwo from '../../../components/Footer';
 import { Styles } from './styles/contact.js';
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: contact page
+
+*/
+
 function Contact() {
     useEffect(() => {
         const form = document.getElementById("form_contact");

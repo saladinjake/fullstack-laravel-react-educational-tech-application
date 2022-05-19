@@ -1,9 +1,10 @@
-  import {
+import {
     GET_COURSES,
     COURSE_ERROR,
     SET_LOADING,
 } from '../actions/types';
 
+//state initial
 const initialState = {
   courses: [],
   categories: [],
@@ -11,6 +12,15 @@ const initialState = {
   error: null,
 };
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: reducer for authentication
+*@params: Object  state; Object action
+*@usage:  dispatch(reducer)
+*/
 export default (state=initialState,action) => {
     switch(action.type) {
         case GET_COURSES:

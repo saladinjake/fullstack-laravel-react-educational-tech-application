@@ -22,6 +22,15 @@ import {
   MaritalStatus,
 } from "helper/data";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: instructor register page
+
+*/
+
 const InstructorRegister = () => {
   let history = useHistory();
   const [loading, setLoading] = useState(false);

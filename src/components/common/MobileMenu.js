@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/mobileMenu.js";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: mobile menu component
+
+*/
+
 function MobileMenu() {
     useEffect(() => {
         // Mobile Menu

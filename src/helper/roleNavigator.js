@@ -1,3 +1,12 @@
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: role navigator function
+
+*/
+
 const roleNavigator = (role) => {
   let route;
   switch (role) {

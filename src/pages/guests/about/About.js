@@ -7,6 +7,15 @@ import FaqEvent from '../../../components/FaqEvent';
 import FooterTwo from '../../../components/Footer';
 import { Styles } from "./styles/about.js";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: style definition for about
+
+*/
+
 class About extends Component {
 
     render() {

@@ -7,6 +7,16 @@ import CourseItemList from './components/CourseItemsList';
 import FooterTwo from '../../../components/Footer';
 import { Styles } from './styles/course.js';
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: course display in list view
+
+*/
+
 class CourseList extends Component {
 
     render() {

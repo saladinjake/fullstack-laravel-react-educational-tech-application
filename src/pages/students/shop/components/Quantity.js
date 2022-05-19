@@ -1,5 +1,13 @@
 import React, { useEffect } from 'react';
 import { Styles } from '../styles/quantity.js';
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: quantity selector 
+
+*/
 
 function Quantity() {
     useEffect(() => {

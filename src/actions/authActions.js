@@ -1,3 +1,11 @@
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: auth action handlers
+
+*/
 
 import {
     RESET_ERROR,

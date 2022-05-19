@@ -1,5 +1,14 @@
 import * as yup from "yup";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: validation object for instructor registeration
+
+*/
+
 // const phoneRegExp = /^\+(?:[0-9] ?){6,14}[0-9]$/;
 
 //   phone_number: yup

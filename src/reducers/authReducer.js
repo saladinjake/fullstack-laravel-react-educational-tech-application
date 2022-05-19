@@ -1,3 +1,4 @@
+// import action types
 import {
   AUTH_ERROR,
   LOGIN_SUCCESS,
@@ -8,11 +9,13 @@ import {
   SET_LOADING,
 } from "./../actions/types";
 
+//prefetch initial existing states
 const cachedUser = localStorage && JSON?.parse(localStorage.getItem("user"));
 const cachedRole = localStorage && JSON?.parse(localStorage.getItem("user_roles"));
 const cachedToken = localStorage && localStorage.getItem("token");
 const cachedAuthorization = localStorage.user && localStorage.token;
 
+//set initial state
 const initialState = {
   isAuthenticated: cachedAuthorization ? true : false,
   user: cachedUser ? cachedUser : null,
@@ -24,6 +27,18 @@ const initialState = {
   prevPath: "",
 };
 
+
+
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: reducer for authentication
+*@params: Object  state; Object action
+*@usage: dispatch(reducer)
+*/
 export default (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_SUCCESS:

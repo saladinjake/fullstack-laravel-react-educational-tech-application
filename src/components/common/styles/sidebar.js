@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../element/elements.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: side bar styles
 
+*/
 export const Styles = styled.div`
     a.nav-sidebar {
         padding: 18px 0 0 10px;

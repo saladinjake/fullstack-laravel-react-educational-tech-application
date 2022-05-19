@@ -5,6 +5,15 @@ import PriceFilter from './PriceFilter';
 import PopularCourse from './../../courses/components/PopularCourse';
 import CourseTag from './../../courses/components/CourseTag';
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: side bar for course filtering
+
+*/
+
 class ShopSidebar extends Component {
     render() {
         return (

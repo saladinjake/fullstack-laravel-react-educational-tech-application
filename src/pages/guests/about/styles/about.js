@@ -1,4 +1,12 @@
 import styled from "styled-components";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: style definition for about
+
+*/
 
 export const Styles = styled.div`
     .about-page {

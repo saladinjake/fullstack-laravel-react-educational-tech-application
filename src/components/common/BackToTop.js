@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
 import { Styles } from "./styles/backToTop.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: back to top component
 
+*/
 function BackToTop() {
     useEffect(() => {
         const topBtn = document.querySelector(".totop-btn");

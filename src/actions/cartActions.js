@@ -1,3 +1,11 @@
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: cart action handlers
+
+*/
 import {
   ADD_TO_CART,
   GET_COURSES,

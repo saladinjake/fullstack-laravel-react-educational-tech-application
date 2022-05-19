@@ -1,3 +1,4 @@
+//get action stypes
 import {
   GET_COURSES,
   COURSE_ERROR,
@@ -9,10 +10,11 @@ import {
 } from "../actions/types";
 
 import toast from "react-hot-toast";
-
+//prefetch initial state
 const cachedCart = localStorage && JSON?.parse(localStorage.getItem("cart"));
 const cachedTotal = localStorage && localStorage.getItem("total");
 
+//set state initial
 const initialState = {
   cart: cachedCart ? cachedCart : [],
   courses: [],
@@ -20,6 +22,15 @@ const initialState = {
 };
 
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: reducer for authentication
+*@params: Object  state; Object action
+*@usage: dispatch(reducer)
+*/
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:

@@ -1,7 +1,14 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Styles } from "./styles/sidebar.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: side bar component
 
+*/
 function Sidebar() {
     useEffect(() => {
         const sidebarBtn = document.getElementById("sidebar-btn");

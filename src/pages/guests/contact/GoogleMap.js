@@ -4,6 +4,15 @@ import { Styles } from './styles/contact.js';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description:Map locator
+
+*/
+
 class GoogleMap extends Component {
 
     static defaultProps = {

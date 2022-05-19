@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import { colors, fonts } from "../element/elements.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: global styles
 
+*/
 export const GlobalStyle = createGlobalStyle`
     html {
         color      : ${colors.bg1};

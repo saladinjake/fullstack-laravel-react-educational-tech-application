@@ -14,6 +14,15 @@ import { fetchCourses } from "actions/coursesActions";
 import Loader from "components/Loader/Loader";
 import { useQuery } from "hooks/useQuery.js";
 
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: course display in grids
+
+*/
+
 const CourseGrid = ({
   course: { courses, courseLoading },
   fetchCourses,

@@ -16,6 +16,16 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { login, logOut, setPrevPath } from "actions/authActions";
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: login page
+
+*/
+
 const Login = ({
   auth: { prevPath },
   login,

@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import { Styles } from '../styles/priceFilter.js';
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: price filter selector
+
+*/
 
 class PriceFilter extends Component {
 

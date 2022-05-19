@@ -10,6 +10,16 @@ import { getAuthProfile } from "services/learner.js";
 import Loader from "components/Loader/Loader";
 import toast from "react-hot-toast";
 
+
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: Cart display
+*@params: Object  props
+*@usage: <Product />
+*/
 const Product = () => {
   const [activeCourses, setActiveCourses] = useState([]);
   const [loading, setLoading] = useState(true);

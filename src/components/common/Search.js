@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Styles } from "./styles/search.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: search box component
 
+*/
 const Search = () => {
   let history = useHistory();
 

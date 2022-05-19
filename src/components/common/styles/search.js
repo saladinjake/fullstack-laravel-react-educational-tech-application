@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../element/elements.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: search box overlay full width style search
 
+*/
 export const Styles = styled.div`
     a.nav-search {
         padding: 18px 0 0 10px;

@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Breadcrumb } from 'react-bootstrap';
 import { Styles } from "./styles/breadcrumb.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: bread crubs component
 
+*/
 export class BreadcrumbBox extends Component {
     state = {
         backgroundImage: 'breadcrumb-bg.jpg',

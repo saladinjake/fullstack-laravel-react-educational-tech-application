@@ -2,7 +2,14 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Styles } from "./styles/stickyMenu.js";
+/*
+*@companyName: EMS
+*@Location : Lagos Nigeria
+*@Author/Developer : juwa victor/saladinjake
+*@AuthorsEmail : juwavictor@gmail.com
+*@description: sticky menu component
 
+*/
 function StickyMenu({ cart, isAuthenticated, logOut }) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
