@@ -1,0 +1,42 @@
+
+
+@font-face {
+  font-family: "Sequel Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sequel Sans"),
+    url("../fonts/Sequel\ Sans\ Black\ Disp.ttf") 
+    format("otf");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primaryFont;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.h-1 {
+  @include fontBold(3.6rem, 4.6rem, $black);
+  font-weight: 700;
+}
+

@@ -349,10 +349,10 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-const AppSideBar  = connect(mapStateToProps, {
+const QuestenceSIDEBAR  = connect(mapStateToProps, {
   login,
   setPrevPath,
   logOut,
 })(Sidebar);
 
-export default withRouter(AppSideBar);
+export default withRouter(QuestenceSIDEBAR);

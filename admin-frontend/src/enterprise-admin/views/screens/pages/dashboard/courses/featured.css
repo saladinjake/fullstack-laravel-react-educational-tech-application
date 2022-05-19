@@ -1,0 +1,344 @@
+
+.featured .container {
+	width: 100%;
+	/*margin: 0 auto;*/
+	text-align: center;
+	margin-top: 50px;
+}
+.featured .container h2, h4 {
+	text-transform: uppercase;
+	color: #555
+}
+.featured .container h2 {
+	margin-bottom: 5px;
+}
+.featured .container h4 {
+	margin-top: 5px;
+}
+.featured .box {
+	width: 33.33%;	/*border: 1px solid;*/
+	height: 300px;
+	margin: 1% 3%;
+	display: inline-block;
+	text-decoration: none;
+	color: #3b3b3b;
+}
+.featured .box > div {
+	padding-top: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.featured .row {
+	width: 100%;
+}
+.featured .submit-choices {
+	width: 250px;
+	border: none;
+	background-color: #6C7A89;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 40px;
+}
+.featured .submit-choices:active {
+	position: relative;
+	top: 3px
+}
+.featured .change-options {
+	text-decoration: none;
+	color: #0095d9;
+	display: block
+}
+.featured .margin-top100 {
+	margin-top: 100px;
+}
+.featured .margin-top20 {
+	margin-top: 20px;
+}
+.featured .text-field {
+	width: 230px;
+	padding: 5px;
+}
+.featured .email-submit {
+	border: none;
+	background-color: #6c7a89;
+	color: #fff;
+	padding: 5px;
+}
+.featured .email-submit:active {
+	position: relative;
+	top: 3px;
+}
+/*************  Sectors Styling Starts From Here ***********/
+
+.box .activeset {
+	background-size: 40% !important;
+	box-shadow: 10px 6px #bababa
+}
+.featured .materials {
+	display: block;
+	height: 150px;
+	background-color: #d35400;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.featured .materials:hover {
+	background-size: 40%;
+	background-color: #e67e22;
+}
+.featured .energy {
+	display: block;
+	height: 150px;
+	background-color: #336E7B;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.featured .energy:hover {
+	background-size: 40%;
+	background-color: #34495E;
+}
+.featured .financials {
+	display: block;
+	height: 150px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.featured .financials:hover {
+	background-size: 40%;
+	background-color: #1abc9c;
+}
+.featured .healthcare {
+	display: block;
+	height: 150px;
+	background-color: #e74c3c;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.healthcare:hover {
+	background-size: 40%;
+	background-color: #c0392b
+}
+.industrials {
+	display: block;
+	height: 150px;
+	background-color: #27ae60;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.industrials:hover {
+	background-size: 40%;
+	background-color: #2ecc71;
+}
+.technology {
+	display: block;
+	height: 150px;
+	background-color: #2980b9;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.technology:hover {
+	background-size: 40%;
+	background-color: #3498db;
+}
+.utilities {
+	display: block;
+	height: 150px;
+	background-color: #8e44ad;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.utilities:hover {
+	background-size: 40%;
+	background-color: #9b59b6;
+}
+.random {
+	display: block;
+	height: 150px;
+	background-color: #6C7A89;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	transition: ease-in-out 0.3s;
+}
+.random:hover {
+	background-size: 40%;
+	background-color: #95A5A6;
+}
+
+/*************  Sectors Styling Ends From Here ***********/
+
+
+
+
+/*********************** Media Query Starts Here ************/
+@media only screen and (min-width:320px) and (max-width: 395px) {
+.featured .text-field {
+	width: 170px;
+	padding: 5px;
+}
+}
+@media only screen and (min-width:320px) and (max-width: 479px) {
+	.featured .container {
+	width: 100%
+}
+.featured .box {
+	margin: 2%;
+	width: 45%;
+}
+.materials, .energy, .financials, .healthcare, .industrials, .technology, .random, .utilities {
+	height: 100px;
+	border-radius: 0px;
+}
+}
+ @media only screen and (min-width:480px) and (max-width: 600px) {
+.featured .container {
+	width: 100%
+}
+.featured .box {
+	margin: 6% 2%;
+	width: 45%;
+}
+.materials, .energy, .financials, .healthcare, .industrials, .technology, .random, .utilities {
+	height: 100%;
+	border-radius: 0px;
+}
+}
+ @media only screen and (min-width:601px) and (max-width: 767px) {
+.featured .container {
+	width: 80%
+}
+.featured .box {
+	margin: 6% 2%;
+	width: 38%;
+	border-radius: 0px;
+}
+.materials, .energy, .financials, .healthcare, .industrials, .technology, .random, .utilities {
+	height: 100%;
+}
+}
+ @media only screen and (min-width:768px) and (max-width: 800px) {
+.featured .container {
+	width: 80%
+}
+.featured .box {
+	margin: 2% 2%;
+	width: 20%;
+}
+.materials, .energy, .financials, .healthcare, .industrials, .technology, .random, .utilities {
+	height: 120px;
+}
+}
+ @media only screen and (min-width:801px) and (max-width: 1024px) {
+.featured .container {
+	width: 80%
+}
+.featured .box {
+	margin: 2% 2%;
+	width: 20%;
+}
+.materials, .energy, .financials, .healthcare, .industrials, .technology, .random, .utilities {
+	height: 120px;
+}
+}
+/*********************** Media Query Ends Here ************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.caption span {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  font-family: 'Myriad Pro regular';
+  font-size: 15.31px;
+}
+.image_grid {
+  display: inline-block;
+  padding-left: 25px;
+}
+.image_grid label {
+  position: relative;
+  display: inline-block;
+}
+.image_grid img {
+  display: block;
+}
+.image_grid input {
+  display: none;
+}
+
+.image_grid input:checked + .caption {
+  background: rgba(0,0,0,0.5);
+}
+.image_grid input:checked + .caption::after, .we-add {
+  content: '✔';    
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 70px; height: 70px;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+

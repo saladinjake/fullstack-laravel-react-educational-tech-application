@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500);
+
+$font-stack: 'Fira Sans', sans-serif;
+
+$black: #2b2b2b;
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #54a793;
+  #click-me {
+    color: #fff;
+    font-family: "Open Sans";
+    letter-spacing: .8px;
+    background: #357465;
+    padding: 20px 25px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+      &:hover {
+        background: darken(#357465, 5%);
+        transform: scale(1.1);
+        box-shadow: 0px 0px 47px -1px rgba(0,0,0,0.33);
+      }
+    }
+  }
+.container-modal {
+   display: block;
+}
+
+.sub-head-modal {
+  width: 300px;
+  
+}
+.sale-coupon {
+  font-family: $font-stack;
+  font-weight: 500;
+  font-size: 2.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+.nospam, .fine-print,.nothanks {
+  font-weight: 300;
+} 
+.nospam, .fine-print {
+  font-size: 10px;
+  color:rgba(155, 155, 155, 1);
+}
+.fine-print {
+  margin-top: -8px;
+  padding-bottom: 25px;
+  letter-spacing: .5px;
+}
+.nospam {
+  color: lighten($black, 50%);
+  padding-top: 10px;
+  font-size: 11px;
+  line-height: 15px;
+  span {
+    color: #535353; 
+    text-decoration: underline;
+  }
+}
+.nothanks {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    color: lighten($black, 50%);
+    letter-spacing: .8px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: darken(#8e8e8e, 20%);
+      font-weight: 400;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background: lighten($black, 50%);
+      height: 1px;
+      max-width:75px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 3px;
+    }
+  }
+}
+.x {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  .one, .two {
+    background: lighten($black, 55%);
+    height: 3px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .one
+  {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .two {
+    transform: rotate(-45deg) 
+    translate(-4px, 4px);
+  }
+}
+.container-modal {
+  background:#fff;
+  width: 800px;
+  height: 425px;
+  position: absolute;
+  left: 50%;
+  top:400px;
+  transform: translate(-50%, -50%);
+
+  background:  url("https://image.freepik.com/free-vector/illustration-join-us-program-employee-recruitment-new-normal-pandemic-worker-hire-announcements-design-can-be-used-landing-page-website-mobile-app-poster-flyers-banner_4968-1193.jpg")  no-repeat center; 
+ 
+  background-size: 100%;
+  margin: 0 auto;
+  .sign-up {
+    position: absolute;
+    width: 400px;
+    right: 35px;
+    form {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      input[type="text"] {
+       box-shadow: 0px 0px 31px 0px rgba(82,82,82,0.3);
+      }
+      input { 
+        width: 100%;
+        margin: 25px 0 -5px;
+        padding: 18px 0px;
+        border: none;
+        border-radius: 2px;
+      }
+      ::-webkit-input-placeholder {
+        text-align: center;
+        letter-spacing: .7px;
+        color: lighten($black, 55%);
+        font-size: 18px;
+        font-weight: 300;
+      }
+      input[type="submit"] {
+        margin-bottom: -25px;
+        width: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        background: #5bbb89;
+        transition: background .3s ease-in-out;
+        &:hover {
+          background: darken(#6ac292, 10%);
+        }
+      }
+    }
+  }
+}
+
+.daily-ui {
+  position: absolute;
+  bottom: -98px;
+  font-size: 12em;
+  font-weight: 700;
+  color: rgba(84, 167, 147,.1);
+text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(84, 167, 147, 0.1) 1px 1px 1px;
+}
+
+
+
+
+
+
+
+
+ 
+

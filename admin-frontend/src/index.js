@@ -10,11 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider as Provisioner } from "react-redux";
 import store from "./enterprise-admin/core/redux/store";
 
+
 // import ScrollToTop from "./enterprise-admin/core/helpers/ScrollToTop";
 import { Toaster } from "react-hot-toast";
-
+import Spinner from './enterprise-admin/views/screens/components/shared/Spinner';
 ReactDOM.render(
-   <Router>
+
+
+<Router>
             <Toaster
           toastOptions={{
             success: {
@@ -31,7 +34,9 @@ ReactDOM.render(
             },
           }}
         />
-        <Suspense fallback={<div>Loading</div>}>
+    {/*<GlobalStyle /> 
+        <ScrollToTop />*/}
+        <Suspense fallback={<Spinner/>}>
             <Switch>
 
             <Provisioner store={store}>
@@ -39,7 +44,7 @@ ReactDOM.render(
             </Provisioner>
            </Switch>
         </Suspense>
- </Router>
+      </Router>
   ,
   document.getElementById("root")
 );

@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
+import AppRoutes from "./enterprise-admin/core/routes/navigation";
 import './App.scss';
 
 import { withRouter } from 'react-router-dom';
-import toast from "react-hot-toast"
-
-
-import { connect } from "react-redux";
 import Navbar from './enterprise-admin/views/screens/components/shared/Navbar';
 import Sidebar from './enterprise-admin/views/screens/components/shared/Sidebar';
 import SettingsPanel from './enterprise-admin/views/screens/components/shared/SettingsPanel';
 import Footer from './enterprise-admin/views/screens/components/shared/Footer';
-
-import { 
-  persistenceCheckExistence ,
-  currentUserInfo 
-} from "./enterprise-admin/api/services/admin"
+import toast from "react-hot-toast"
+import { persistenceCheckExistence ,currentUserInfo } from "./enterprise-admin/api/services/admin"
 
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { login, logOut, setPrevPath } from "./enterprise-admin/core/redux/actions/authActions";
-
-
 
 class AppEnterprise extends Component {
   state = {}
+
+  ensureSecuredAdminAccess(){
+  }
+
+  
 
   existsUserAsAdmin(unidentifiedUser){
     if(unidentifiedUser){
@@ -55,7 +53,7 @@ class AppEnterprise extends Component {
           // console.log(adminStillHasValidTokens?.data?.data);
            let userUnidentified = adminStillHasValidTokens?.data?.data;
            if("roles" in userUnidentified ){
-//             console.log(true)
+             console.log(true)
              const {roles } = userUnidentified 
              const isAdmin = roles[0].name == 'SuperAdmin' ? true:  that.kickOutAttempt()
              // level 2 check mate
@@ -87,7 +85,6 @@ class AppEnterprise extends Component {
 
 
   }
-  
   render () {
     let navbarComponent = !this.state.isFullPageLayout ? <Navbar/> : '';
     let sidebarComponent = !this.state.isFullPageLayout ? <Sidebar/> : '';
@@ -100,7 +97,7 @@ class AppEnterprise extends Component {
           { sidebarComponent }
           <div className="main-panel">
             <div className="content-wrapper">
-              
+              <AppRoutes/>
               { SettingsPanelComponent }
             </div>
             { footerComponent }
@@ -110,14 +107,14 @@ class AppEnterprise extends Component {
     );
   }
 
-
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      this.detectUserNavigation();
+      this.onRouteChanged();
     }
   }
 
-  detectUserNavigation() {
+  onRouteChanged() {
+    console.log("ROUTE CHANGED");
     const { i18n } = this.props;
     const body = document.querySelector('body');
     if(this.props.location.pathname === '/layout/RtlLayout') {
@@ -130,8 +127,8 @@ class AppEnterprise extends Component {
     }
     window.scrollTo(0, 0);
     const fullPageLayoutRoutes = [
-     '/error-pages/error-404', 
-     '/error-pages/error-500', 
+     
+     '/error-pages/error-404', '/error-pages/error-500', 
      '/general-pages/landing-page',
      "/login"
      ];
@@ -151,19 +148,25 @@ class AppEnterprise extends Component {
     }
   }
 
-
-  
 }
+
+
+
+
+
 
 
 const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-const ApplicationWrapper  = connect(mapStateToProps, {
+const QuestenceApplicationWrapper  = connect(mapStateToProps, {
   login,
   setPrevPath,
   logOut,
 })(AppEnterprise);
 
-export default (withRouter(ApplicationWrapper));
+export default (withRouter(QuestenceApplicationWrapper));
+
+
+//export default withRouter(AppQuestenceEnterprise)

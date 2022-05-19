@@ -96,7 +96,7 @@ make payments because EMS needs to make profit.
  -  Dead line is your constraint and yet
    you must provide efficient production 
    ready code in the range of 4- 7 days 
-   and not cut corners to achieve this goal.
+   and not cut corners to achieve this goal by writting shabby quick codes: Your codes should be standard , well written and self explanatory. In essence your code should be atmost a production ready code
  
  -   Keep in mind that you are 
    required to build a good looking interface for different

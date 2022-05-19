@@ -1,0 +1,393 @@
+@import "../../styles/abstract/base";
+
+button,
+a {
+  cursor: pointer;
+}
+
+nav.desktop {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 30px;
+  z-index: 30;
+
+  @include respond(tab-land) {
+    justify-content: space-between;
+  }
+
+  figure.logo {
+    padding-top: 12px;
+    margin-right: 3rem;
+  }
+
+  button.nav-icon {
+    display: none;
+    pointer-events: none;
+
+    @include respond(tab-land) {
+      cursor: pointer;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 2rem;
+      pointer-events: auto;
+      transform: rotate(0deg);
+      margin-left: 2rem;
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        transition: all 0.3s ease-in-out;
+        background-color: $primary;
+        width: 2rem;
+        height: 3px;
+        border-radius: 1rem;
+      }
+
+      .bar2 {
+        margin-top: 0.3rem;
+      }
+
+      .bar3 {
+        margin-top: 0.3rem;
+      }
+
+      &.mobActive {
+        .bar1 {
+          transform: rotate(45deg);
+          transform-origin: center;
+        }
+
+        .bar2 {
+          transform: rotate(-45deg);
+          transform-origin: center;
+        }
+
+        .bar3 {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  ul.mainNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    @include respond(tab-land) {
+      display: none;
+      transform: translateY(-100%);
+      transition: all 0.8s ease-in-out;
+      visibility: hidden;
+
+      &.mobactive {
+        display: flex;
+        background: #ffffff;
+        height: 100vh;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 28;
+        padding: 12px;
+        visibility: visible;
+        transform: translate(0);
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    li.search__group {
+      margin-left: auto;
+
+      @include respond(tab-land) {
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      .search__form {
+        display: flex;
+        background: #ffffff;
+        align-items: center;
+        border: 1px solid rgba(48, 65, 90, 0.5);
+        border-radius: 4px;
+
+        @include respond(tab-land) {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        input {
+          flex-basis: 70%;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          transition: all 0.2s;
+          height: 100%;
+          padding: 8px 16px;
+          @include fontNormal(1rem, 2rem, #788291);
+
+          &:focus {
+            outline: none;
+
+            &:invalid {
+              border-bottom: 1px solid orangered;
+            }
+          }
+
+          &::-webkit-input-placeholder {
+            padding: 8px 16px;
+            @include fontNormal(1rem, 2rem, $primary);
+          }
+        }
+
+        button {
+          border-radius: 0px 4px 4px 0px;
+          height: 100%;
+          border: 2px solid #0253c8;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          @include respond(tab-land) {
+            border: 7px solid #0253c8;
+            margin: 0;
+          }
+
+          &:hover {
+            color: $white;
+            background: rgba(#0253c8, 0.7);
+            border: 2px solid transparent;
+
+            @include respond(tab-land) {
+              border: 7px solid #0253c8;
+            }
+          }
+
+          svg {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+
+        @include respond(tab-land) {
+          margin-right: 0;
+        }
+      }
+
+      &.DropDown {
+        position: relative;
+        padding-top: 10px;
+        cursor: pointer;
+
+        @include respond(tab-land) {
+          width: 100%;
+        }
+
+        input.DropDown__checkbox {
+          display: none;
+        }
+
+        input.DropDown__checkbox:checked ~ ul.DropDown__list {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .DropDown__button.useracount {
+          background: #0253c8;
+          border-radius: 4px;
+          outline: none;
+          border: none;
+          padding: 0.5rem 2rem;
+          @include fontNormal(1rem, 2rem, $white);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          @include respond(tab-land) {
+            margin-bottom: 1rem;
+            width: 100%;
+          }
+
+          @include respond(phone) {
+            @include fontNormal(1rem, 1.2rem, $white);
+            text-align: center;
+          }
+
+          figure {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            margin-right: 10px;
+            background-color: white;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        ul.DropDown__list {
+          min-width: 10rem;
+          position: absolute;
+          top: 2.5rem;
+          left: 0;
+          z-index: 31;
+          opacity: 0;
+          background: #ffffff;
+          visibility: hidden;
+          transition: all 0.2s;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+          &.userdropdown {
+            left: -5rem;
+
+            @include respond(tab-land) {
+              left: 0;
+              top: 5rem;
+            }
+          }
+
+          li {
+            padding: 10px;
+            display: block;
+            width: 100%;
+
+            font-size: 13px;
+            color: #555555;
+            text-transform: capitalize;
+            font-weight: 400;
+            margin-right: 0;
+            border-bottom: 1px solid #eeeeee;
+            position: relative;
+
+            a {
+              @include fontNormal(1rem, 2rem, #30415a);
+            }
+
+            ul.DropDown__submenu {
+              min-width: 10rem;
+              position: absolute;
+              top: 0;
+              left: 10rem;
+              z-index: 31;
+              opacity: 0;
+              background: #ffffff;
+              visibility: hidden;
+              transition: all 0.2s;
+              box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+              &.showActive {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      a,
+      label {
+        @include fontNormal(1rem, 2rem, #30415a);
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 0.5rem;
+        }
+
+        &:hover {
+          color: $primary;
+
+          svg {
+            path {
+              fill: $primary;
+            }
+          }
+        }
+      }
+
+      button,
+      a.auth {
+        background: #0253c8;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        padding: 0.5rem 2rem;
+        @include fontNormal(1rem, 2rem, $white);
+        @include flexCenter;
+
+        @include respond(tab-land) {
+          margin-bottom: 1rem;
+        }
+
+        @include respond(phone) {
+          @include fontNormal(1rem, 1.2rem, $white);
+          text-align: center;
+        }
+
+        &:hover {
+          color: #0253c8;
+          background: linear-gradient(
+            180deg,
+            rgba(2, 83, 200, 0.03) 0%,
+            rgba(2, 83, 200, 0) 100%
+          );
+          border: 1px solid #0253c8;
+        }
+
+        &.btnMobileFull {
+          // background-color: red;
+
+          @include respond(tab-land) {
+            width: 100%;
+          }
+        }
+
+        &.outline {
+          color: #0253c8;
+          background: linear-gradient(
+            180deg,
+            rgba(2, 83, 200, 0.03) 0%,
+            rgba(2, 83, 200, 0) 100%
+          );
+          border: 1px solid #0253c8;
+
+          &:hover {
+            background: rgba(2, 83, 200, 0.9);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
