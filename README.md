@@ -1,5 +1,9 @@
 ##Senior Full stack react app/Senior Frontend/Backend ## --REACT-WITH-ME (E-LEARNING-ENROLLMENT-APPLICATION)
 
+## LINKS TO YOUR SOLUTION: place the url links to your solutions, eg user frontend url, admin frontend url, swagger url , backend url endpoint  
+
+
+##PROBLEM SCENARIO
 
 - Ali Mohammed Alvin Turuk a client 
 who is a very busy person, has decided that he would 
@@ -146,7 +150,7 @@ make payments because EMS needs to make profit.
 
    ``` Your stack chosen for this task is react the redux way and laravel/php or node js```
 
-- Remember you have 7days maximum to deliver a functioning prototype as a proof you can handle such senior full stack role.
+- Remember you have 7days maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. Dead Line 24/05/2022
 
    GOOD LUCK VICTOR!!!...
 
