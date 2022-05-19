@@ -1,8 +1,6 @@
 ##Senior Full stack react app/Senior Frontend/Backend ## --REACT-WITH-ME (E-LEARNING-ENROLLMENT-APPLICATION)
 
 
-
-
 - Ali Mohammed Alvin Turuk a client 
 who is a very busy person, has decided that he would 
 want to build an application that will
@@ -12,12 +10,14 @@ students regardless of geo-location barrier.
 - He is the owner of a ficticious I.T  school (EMS)
 where learning and teaching is the sole aim of
 the business done only on -site and in premise.
+
 - Currently there is a needs for an online elearning platform  to bridge the gap in sales of their
-   educational services and a need to offer flexibilty in learning from any where. He decides to go digital and contacted your company.
+   educational services and a need to offer flexibilty in learning from any where. He decides to go digital and contacted your company. He needs the application divided into 3 seperate sections : enrollment App, admin App and authoring Tool
 
 - From the drafted requirement gathering and conversation with
 the client, only but a few information 
  was gotten as stated below: 
+
 
 - I want an E-learning platform that sells course on line
 - Users must be authenticated
@@ -26,7 +26,11 @@ the client, only but a few information
 or paid
 - Courses are categorized
 - There would be 3 level of users - students, 
-instructors, admin
+instructors, admin and hence 3 different application
+  the user application, the admin application and the instructors application
+- the overview is simple user logs in logs out, buy a course or two  and manages profile and password changes
+- the admin manages the whole feature of the app. 
+- the teacher upload course samples for sale and manage course content
 - There would be a dashboard to see analytics 
 and payments
 - Admin should manage the application and
@@ -64,12 +68,13 @@ make payments because EMS needs to make profit.
   make this happen Right or wrong???"""
 
 
-- With this information , you as an aspiring
-   full stack developer in our company are then
+- With this information , you as an aspiring Senior
+   Full Stack Developer in our company are then
    required to bring these information above 
    to reality and all the burden lies on you 
-   to show your tech skills. """We need this
-   project Victor""". Hint: Use database persistence
+   to show your tech skills and nail this task. """We need this results as soon as possible""". 
+
+- Hint: Use database persistence
    where necessary and json data to mimic responses
    to information needed in static pages 
    which you are to provide good content 
@@ -88,10 +93,12 @@ make payments because EMS needs to make profit.
    you must provide efficient production 
    ready code in the range of 4- 7 days 
    and not cut corners to achieve this goal.
+ 
  -   Keep in mind that you are 
    required to build a good looking interface for different
-   pages. 
- -  Where contents are not available; use the famous lorem ipsum data. 
+   pages eg landing page, course display page about us ,contact us etc..
+
+ -  Where contents are not available; you are free to use the famous lorem ipsum place holder. 
 
  -  You are not expected to write simple or
    piece meals codes. 
@@ -99,7 +106,7 @@ make payments because EMS needs to make profit.
  -  Your codes should be production ready
    on  both frontend and backend scripts.
 
- -  On the frontend , Your codes should be component based
+ -  On the frontends , Your codes should be component based
    and reuseable for future use in further task assigned to you.
 
  -  On the backend loose coupling, dependency injection 
@@ -129,8 +136,7 @@ make payments because EMS needs to make profit.
    You alone are incharge.
 
  -  This task given stands from the point of  
-   a real world day to day challenge for a Fullstack developer
-   with little information given but expected 
+   a real world day to day challenge for a Fullstack developer with little information given but expected 
    to present out of the box a good finished production
    ready code well documented and tested.
 
@@ -138,8 +144,9 @@ make payments because EMS needs to make profit.
    Are you fit for this role? 
   -
 
-
    ``` Your stack chosen for this task is react the redux way and laravel/php or node js```
+
+- Remember you have 7days maximum to deliver a functioning prototype as a proof you can handle such senior full stack role.
 
    GOOD LUCK VICTOR!!!...
 

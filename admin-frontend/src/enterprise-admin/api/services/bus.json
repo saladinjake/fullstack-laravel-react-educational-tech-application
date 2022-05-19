@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "message": "Profile Retrieved Successfully.",
+  "data": {
+    "id": 2,
+    "user_id": 11,
+    "industry_id": 35,
+    "country_id": 156,
+    "company_name": "Questence Limited",
+    "company_description": "Questence Limited",
+    "company_phone": "+2347000004278",
+    "hq_address": "8a, Adekunle Lawal Street, Off Mobolaji Johnson Avenue, Ikoyi, Lagos\r\n                Nigeria.",
+    "registration_number": "RC12345678",
+    "company_logo": "questence.jpg",
+    "no_of_employees": "20-100",
+    "type_of_institution": null,
+    "linkedin_page": "https://linkedin.com/company/questence-limited",
+    "facebook_page": "https://web.facebook.com/questence-limited",
+    "color_theme": "#B84847",
+    "website": "https://questence.org",
+    "status": "1",
+    "created_at": "2021-03-10T20:09:40.000000Z",
+    "updated_at": "2021-03-10T20:09:40.000000Z",
+    "user": {
+      "id": 11,
+      "username": null,
+      "first_name": "Questence",
+      "middle_name": null,
+      "last_name": "Businesss",
+      "email": "questence@questence.org",
+      "phone_number": null,
+      "image_url": null
+    },
+    "courses": [],
+    "industry": { "id": 35, "name": "E-Learning", "description": null },
+    "country": {
+      "id": 156,
+      "iso": "NG",
+      "name": "NIGERIA",
+      "nicename": "Nigeria",
+      "iso3": "NGA",
+      "numcode": 566,
+      "phonecode": 234
+    }
+  }
+}
