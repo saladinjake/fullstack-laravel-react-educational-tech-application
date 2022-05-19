@@ -1,6 +1,6 @@
 ##Senior Full stack react app/Senior Frontend/Backend ## --REACT-WITH-ME (E-LEARNING-ENROLLMENT-APPLICATION)
 
-## LINKS TO YOUR SOLUTION: place the url links to your solutions, eg user frontend url, admin frontend url, swagger url , backend url endpoint  
+## LINKS TO YOUR SOLUTION: place the url links to your solutions, eg user frontend url, admin frontend url, swagger url , backend url endpoint  as well as admin user name and password.
 
 
 ##PROBLEM SCENARIO
