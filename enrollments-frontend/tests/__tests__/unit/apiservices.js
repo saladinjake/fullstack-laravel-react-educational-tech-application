@@ -1,20 +1,19 @@
+/*@testCases: api services tests
+ *@testType: unit test
+ *@testCategory: simple
+ *@author: saladinjake victor
+ *@company: Ficticious EMS
+ *@date" 5/20/2022
+*/
 import {
  loginUser,
  registerLearner,
  registerInstructor
 } from " enterprise-app/core/api/services/auth"
 
-
-
 let data, res;
-
-
-beforeAll(() => {
-});
-
-
-afterAll(() => {
-});
+beforeAll(() => {});
+afterAll(() => {});
 
 describe('App Component', () => {
 	beforeEach(() => {
@@ -23,12 +22,8 @@ describe('App Component', () => {
 	   	 password:"secret"
 	   }
 	});
-
-
 	afterEach(() => {
-	   data ={
-	   	
-	   } 
+	   data ={} 
 	});
 
   it('should login successful', async () => {
@@ -36,8 +31,7 @@ describe('App Component', () => {
     expect(res).toBeDefined()
     expect(res.data).toBeTruthy()
     expect(res.data).not.toBeNull()
-    expect(res.data.id).not.toBeGreaterThan(0) //toEqual toBe toMatch
-  
+    expect(res.data.id).not.toBeGreaterThan(0) //toEqual toBe toMatch  
     expect(res.data).not.toContain("token")
     expect(res.data).not.toContain("user")
   });

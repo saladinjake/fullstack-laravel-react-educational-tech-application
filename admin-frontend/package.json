@@ -111,7 +111,7 @@
     "pre-commit": "^1.2.2",
     "react-hot-loader": "^4.8.2",
     "react-test-renderer": "^16.8.6",
-    "redux-mock-store": "^1.5.3",
+    "redux-mock-store": "^1.5.3"
     
   },
   "scripts": {

@@ -10,12 +10,21 @@
 import {
     RESET_ERROR,
     LOGIN_SUCCESS,
+    REGISTER_SUCCESS,
     // LOGIN_FAIL,
     LOGOUT,
     SET_PATH,
     SET_LOADING, 
 } from './types';
 
+
+//basics
+export const setRegister = user => ({
+  type: REGISTER_SUCCESS,
+  user,
+});
+
+//advanced with async
 
 export const setLoading = () => async (dispatch) => {
     dispatch({
@@ -28,6 +37,8 @@ export const login = (response) => async (dispatch) => {
       payload: response,
     });
 }
+
+
 
 export const setPrevPath = (path) => async (dispatch) => {
   dispatch({
