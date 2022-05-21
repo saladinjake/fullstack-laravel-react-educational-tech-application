@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Breadcrumb } from 'react-bootstrap';
 import { Styles } from "./styles/breadcrumb.js";
 /*
@@ -9,15 +9,15 @@ import { Styles } from "./styles/breadcrumb.js";
 *@description: bread crubs component
 
 */
-export class BreadcrumbBox extends Component {
-    state = {
-        backgroundImage: 'breadcrumb-bg.jpg',
-    }
+const  BreadcrumbBox =  () =>{
+    
+    const [backgroundImage, setBg] = useState('qbreadcrumb.jpg')
 
-    render() {
+    
+
         return (
             <Styles>
-                <section className="breadcrumb-area" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${this.state.backgroundImage})` }}>
+                <section className="breadcrumb-area" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${backgroundImage})` }}>
                     <Container>
                         <Row>
                             <Col md="12" className="text-center">
@@ -34,5 +34,7 @@ export class BreadcrumbBox extends Component {
                 </section>
             </Styles>
         )
-    }
+    
 }
+
+export default BreadcrumbBox

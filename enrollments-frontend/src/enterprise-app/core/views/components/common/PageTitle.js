@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/pagetitle.js";
 /*
@@ -9,15 +9,14 @@ import { Styles } from "./styles/pagetitle.js";
 *@description: page title component
 
 */
-export class PageTitle extends Component {
-    state = {
-        backgroundImage: 'qbreadcrumb.jpg',
-    }
+const PageTitle = () =>{
+    
+    const [backgroundImage, setBg] = useState('qbreadcrumb.jpg')
 
-    render() {
+    
         return (
             <Styles>
-                <section className="breadcrumb-area" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${this.state.backgroundImage})` }}>
+                <section className="breadcrumb-area" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${backgroundImage})` }}>
                     <Container>
                         <Row>
                             <Col md="12" className="text-left">
@@ -31,5 +30,7 @@ export class PageTitle extends Component {
                 </section>
             </Styles>
         )
-    }
+    
 }
+
+export default PageTitle;

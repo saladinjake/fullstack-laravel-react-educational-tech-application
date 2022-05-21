@@ -19,9 +19,9 @@ const cachedAuthorization = localStorage.user && localStorage.token;
 const initialState = {
   isAuthenticated: cachedAuthorization ? true : false,
   user: cachedUser ? cachedUser : null,
-  token: cachedToken ? cachedToken : null,
+  access_token: cachedToken ? cachedToken : null,
   user_roles: cachedRole ? cachedRole : null,
-  error: null,
+  error: false,
   loading: false,
   errFlag: false,
   prevPath: "",
@@ -42,18 +42,19 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_SUCCESS:
-      localStorage.setItem("access_token", action.payload.access_token);
-      localStorage.setItem("token", action.payload.access_token);
-      localStorage.setItem("user", JSON.stringify(action.payload.user));
-      localStorage.setItem("user_roles", JSON.stringify(action.payload.user_roles));
+      localStorage.setItem("access_token", action?.payload?.access_token);
+      localStorage.setItem("token", action?.payload?.access_token);
+      localStorage.setItem("user", JSON.stringify(action?.payload?.user));
+      localStorage.setItem("user_roles", JSON.stringify(action?.payload?.user_roles));
       return {
         ...state,
         loading: false,
-        user: action.payload.user,
-        token: action.payload.access_token,
-        user_roles:action.payload.user_roles,
+        user: action.payload?.user,
+        access_token: action.payload?.access_token,
+        user_roles:action.payload?.user_roles,
         isAuthenticated: true,
-        errFlag: false,
+        errFlag: true, //since api is not available //false,
+        error:false
       };
     case AUTH_ERROR:
     case LOGIN_FAIL:
@@ -64,14 +65,14 @@ export default (state = initialState, action) => {
       localStorage.removeItem("user_roles");
       return {
         ...state,
-        token: null,
+        access_token: null,
         loading: false,
         user_roles:null,
         isAuthenticated: false,
-        isRegistered: false,
+        // isRegistered: false,
         user: null,
-        errFlag: true,
-        error: action.payload,
+        errFlag: false, //true,
+        error: false//action?.payload|| false,
       };
     case SET_PATH:
       return {

@@ -10,7 +10,6 @@ import {
 import ScrollToTop from "enterprise-app/core/helpers/common/ScrollToTop";
 import { GlobalStyle } from "enterprise-app/core/views/components/common/styles/global.js";
 
-
 import HomeOne from "enterprise-app/core/views/pages/guests/HomeOne";
 import PageNotFound from "enterprise-app/core/views/pages/guests/404/PageNotFound"
 import Login from "enterprise-app/core/views/pages/guests/account/Login"
