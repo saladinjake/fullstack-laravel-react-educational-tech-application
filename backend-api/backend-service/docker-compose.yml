@@ -1,0 +1,98 @@
+version: '3.7'
+
+networks:
+    questence-network:
+        driver: bridge
+services:
+
+  # nginx
+    questence-nginx:
+        build:
+            context: ./.docker
+            dockerfile: nginx.dockerfile
+            args:
+                - NGINXUSER=${NGINXUSER:-www-data}
+                - NGINXGROUP=${NGINXGROUP:-www-data}
+        container_name: questence-nginx
+        restart: always
+        ports:
+            - 80:80
+        volumes:
+            - .:/var/www/html:delegated
+            - ./.docker/nginx/conf:/etc/nginx/conf.d
+
+        depends_on:
+            - questence-db
+            - questence-phpmyadmin
+            - php
+        networks:
+            - questence-network
+        healthcheck:
+            test: ["CMD", "service", "nginx", "status"]
+            retries: 3
+            timeout: 5s
+
+  # mysql
+    questence-db:
+        image: 'mysql:8.0'
+        container_name: questence-db
+        restart: always
+        tty: true
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+        volumes:
+            - './.docker/mysql/data:/var/lib/mysql'
+        networks:
+            - questence-network
+        healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
+            retries: 3
+            timeout: 5s
+
+  # phpmyadmin
+    questence-phpmyadmin:
+        depends_on:
+            - questence-db
+        image: phpmyadmin/phpmyadmin
+        container_name: questence-phpmyadmin
+        restart: always
+        ports:
+            - '8000:80'
+        environment:
+            PMA_HOST: questence-db
+            MYSQL_ROOT_PASSWORD: secret
+        networks:
+            - questence-network
+
+  # php (questence app)
+    php:
+        build:
+            context: ./.docker
+            dockerfile: php.dockerfile
+            args:
+                - PHPUSER=${PHPUSER:-www-data}
+                - PHPGROUP=${PHPGROUP:-www-data}
+        container_name: questence-app
+        volumes:
+            - .:/var/www/html:delegated
+        depends_on:
+            - questence-db
+        networks:
+            - questence-network
+
+  # mailhog
+    mailhog:
+        image: mailhog/mailhog:latest
+        container_name: questence-mailhog
+        restart: unless-stopped
+        ports: 
+            - 1025:1025
+            - 8025:8025
+        networks: 
+            - questence-network
