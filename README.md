@@ -95,7 +95,7 @@ make payments because EMS needs to make profit.
 
  -  Dead line is your constraint and yet
    you must provide efficient production 
-   ready code in the range of 4- 7 days 
+   ready code in 2 weeks
    and not cut corners to achieve this goal by writting shabby quick codes: Your codes should be standard , well written and self explanatory. In essence your code should be atmost a production ready code
  
  -   Keep in mind that you are 
@@ -150,8 +150,7 @@ make payments because EMS needs to make profit.
 
    ``` Your stack chosen for this task is react the redux way and laravel/php or node js```
 
-- Remember you have 7days maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. Dead Line 24/05/2022
-
+- Remember you have 2weeks maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. 
    GOOD LUCK VICTOR!!!...
 
    Good LUCK AGAIN.

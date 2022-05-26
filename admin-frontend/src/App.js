@@ -160,13 +160,13 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-const QuestenceApplicationWrapper  = connect(mapStateToProps, {
+const ApplicationWrapper  = connect(mapStateToProps, {
   login,
   setPrevPath,
   logOut,
 })(AppEnterprise);
 
-export default (withRouter(QuestenceApplicationWrapper));
+export default (withRouter(ApplicationWrapper));
 
 
 //export default withRouter(AppQuestenceEnterprise)
