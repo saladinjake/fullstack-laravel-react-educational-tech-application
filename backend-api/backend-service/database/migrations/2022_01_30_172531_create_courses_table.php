@@ -48,7 +48,7 @@ class CreateCoursesTable extends Migration
             $table->foreign('language_id')->references('id')->on('languages')->onDelete('cascade');
             $table->bigInteger('certificate_id')->unsigned()->index();
             $table->foreign('certificate_id')->references('id')->on('certificates')->onDelete('cascade');
-            $table->foreign('programme_id')->references('id')->on('programmes')->onDelete('cascade');
+            // $table->foreign('programme_id')->references('id')->on('programmes')->onDelete('cascade');
             $table->timestamps();
             $table->enum('status',['-1','0','1','2','3','4','5','6','7','8'])->default('0');
             $table->softDeletes();
