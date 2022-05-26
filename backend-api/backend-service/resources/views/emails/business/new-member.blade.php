@@ -5,7 +5,7 @@ Dear {{$newUser->first_name}} {{$newUser->last_name}},
 
 It is with high delight we welcome you on our bespoke e-learning solution.
 
-Your Questence login credentials is as follows;
+Your EMS login credentials is as follows;
 
 <b>Email</b>: {{$newUser->email}}
 
@@ -13,7 +13,7 @@ Your Questence login credentials is as follows;
 
 Click the link below to start your learning journey.
 
-@component('mail::button', ['url' => 'https://questence.org'])
+@component('mail::button', ['url' => 'https://ems.org'])
 Start Learning
 @endcomponent
 

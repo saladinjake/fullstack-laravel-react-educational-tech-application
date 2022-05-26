@@ -3,7 +3,7 @@
 
 Dear <b>{{$user->businessProfile->company_name}}</b>, 
 
-You have successfully enrolled to the course ({{$course->course_name}}) on Questence platform. 
+You have successfully enrolled to the course ({{$course->course_name}}) on ems platform. 
 
 <b>Course Start Date</b>: {{$course->start_date}}
 

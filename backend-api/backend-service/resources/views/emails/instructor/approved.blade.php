@@ -5,7 +5,7 @@ Dear {{$user->first_name}} {{$user->last_name}},
 
 It is with high delight we welcome you on our bespoke e-learning solution.
 
-Your Questence login credentials is as follows;
+Your EMS login credentials is as follows;
 
 <b>Email</b>: {{$user->email}}
 

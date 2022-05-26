@@ -3,7 +3,7 @@
 
 Dear <b>{{$user->first_name}} {{$user->last_name}}</b>, 
 
-You have been assigned a course ({{$course->course_name}}) on Questence platform by <b>{{$business->company_name}}</b>!
+You have been assigned a course ({{$course->course_name}}) on EMS platform by <b>{{$business->company_name}}</b>!
 
 <b>Course Start Date</b>: {{$course->start_date}}
 

@@ -19,8 +19,8 @@ use App\Http\Requests\CreateLearnerRequest;
 use App\Http\Requests\CreateInstructorRequest;
 
 use jeremykenedy\LaravelRoles\Models\Role;
-use App\Mail\UserWelcome;
-use App\Mail\InstructorWelcome;
+use App\Mail\UserWelcome; //todo not exisit
+use App\Mail\InstructorWelcome; //to do
 use Illuminate\Foundation\Auth\VerifiesEmails;
 use Illuminate\Auth\Events\Verified;
 
