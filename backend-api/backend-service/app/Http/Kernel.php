@@ -65,6 +65,8 @@ class Kernel extends HttpKernel
         'role' => \jeremykenedy\LaravelRoles\App\Http\Middleware\VerifyRole::class,
         'permission' => \jeremykenedy\LaravelRoles\App\Http\Middleware\VerifyPermission::class,
         'level' => \jeremykenedy\LaravelRoles\App\Http\Middleware\VerifyLevel::class,
+         'cors' => \App\Http\Middleware\Cors::class,
+        'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
         
     ];
 }
