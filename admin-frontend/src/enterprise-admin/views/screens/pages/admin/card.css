@@ -1,0 +1,303 @@
+.card {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  margin: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 54px;
+}
+
+
+
+
+
+
+
+
+
+.containerActions {
+  margin-top: 100px;
+  padding: 10px;
+  border: 2px dotted #C5E37A;
+}
+
+.containerActions .btn{
+  margin-right:10px;
+}
+
+.containerActions .btn-small, .containerActions .btn-small:active, .containerActions .btn-small.active{
+  font-size: 14px;
+  color:#333;
+  background: #f7f7f7;
+  border: solid #333333 0.5px; 
+  min-width: 100px;
+  padding: 9px;
+}
+
+.containerActions .btn-small:hover{
+  color:#ffffff;
+  background: #797979;
+  border: none;
+}
+
+
+ .containerActions .btn-main, .containerActions .btn-main:active, .containerActions .btn-main.active{
+  font-size: 18px;
+  color:#ffffff;
+  background: #245BB8;
+  min-width: 150px;
+  min-height: 50px;
+  padding:12px;
+}
+
+.containerActions .btn-main:hover{
+  color:#ffffff;
+  background: #F89012;
+}
+
+
+
+
+/*  medium-sized devices */ 
+@media all and (min-width: 501px) and (max-width: 800px)
+{
+.containerActions{
+  text-align:center;
+}  
+.containerActions .btn{
+  margin-right:4px;
+  display: inline-block;
+}
+.containerActions .btn-small,.containerActions .btn-small:active, .containerActions .btn-small.active{
+  font-size: 14px;
+  min-width: 50px;
+  padding: 6px;
+}  
+.containerActions .btn-main,.containerActions  .btn-main:active,.containerActions .btn-main.active{
+  font-size: 18px;
+  min-width: 100px;
+  padding:9px;
+}  
+    }
+
+
+/*  small devices */ 
+@media all and (min-width: 401px) and (max-width: 500px)
+{
+.containerActions{
+  text-align:center;
+}  
+ .containerActions  .btn{
+  margin-right:2px;
+  display: inline-block;
+}
+ .containerActions .btn-small, .containerActions .btn-small:active, .containerActions .btn-small.active{
+  font-size: 12px;
+  min-width: 50px;
+  padding: 6px;
+}  
+.containerActions .btn-main, .containerActions .btn-main:active, .containerActions .btn-main.active{
+  font-size: 16px;
+  min-width: 100px;
+  padding:9px;
+}  
+    }
+
+
+
+/*  extra small devices */ 
+@media all and (min-width: 297px) and (max-width: 400px) {
+.containerActions{
+  text-align:center;
+}  
+ .containerActions .btn{
+  margin-right:1px;
+  display: inline-block;
+}
+.containerActions .btn-small, .containerActions .btn-small:active, .containerActions .btn-small.active{
+  font-size: 10px;
+  min-width: 45px;
+  padding: 6px;
+}  
+.containerActions .btn-main, .containerActions .btn-main:active, .containerActions .btn-main.active{
+  font-size: 14px;
+  min-width: 90px;
+  padding:9px;
+}  
+    }
+
+
+/*  extra super small devices */ 
+@media all and (max-width: 296px)
+{
+.containerActions{
+  text-align:center;
+}  
+.containerActions .btn{
+  margin-right:0.5px;
+  display: inline-block;
+}
+.containerActions .btn-small,.containerActions  .btn-small:active, .containerActions .btn-small.active{
+  font-size: 8px;
+  min-width: 40px;
+  padding: 6px;
+}  
+.containerActions .btn-main, .containerActions .btn-main:active, .containerActions .btn-main.active{
+  font-size: 9px;
+  min-width: 70px;
+  padding:6px;
+}  
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.p{
+	    list-style: none;
+	}
+
+.profile-card	img {
+	    -ms-interpolation-mode: bicubic;
+	    vertical-align: middle;
+	    border: 0;
+	}
+
+	.profile-card{
+		width: 300px;
+		border-radius: 2px;
+		overflow: hidden;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+		position: relative;
+		margin: auto;
+		background: rgba(255,255,255,1);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.profile-card header{
+		display: block;
+		position: relative;
+		background: rgba(255,255,255,1);
+		text-align: center;
+		padding: 30px 0 20px;
+		z-index: 1;
+		overflow: hidden;
+	}
+
+	.profile-card header:before{
+		content: "";
+		position: absolute;
+		/*background: url('http://ali.shahab.pk/blur.php?img=http://ali.shahab.pk/ali-shahab.jpg&x=60') no-repeat;
+		*/background-size: cover;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		
+	}
+
+	.profile-card header:after{
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-image: linear-gradient(
+		    to bottom,
+		    rgba(255, 255, 255, 0) 0%,
+		    rgba(255, 255, 255, 1) 100%
+		);
+	}
+
+	.profile-card header img{
+		border-radius: 100%;
+		overflow: hidden;
+		width: 150px;
+		/*border: 1px solid rgba(255,255,255,.5);*/
+		box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+	}
+
+	.profile-card header h1{
+		font-weight: 200;
+		font-size: 42px;
+		color: #444;
+		letter-spacing: -3px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.profile-card header h2{
+		font-weight: 400;
+		font-size: 14px;
+		color: #666;
+		letter-spacing: .5px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.profile-card .profile-bio{
+		padding: 0 30px;
+		text-align: center;
+		color: #888;
+	}
+
+	.profile-card .profile-social-links{
+		display: table;
+		width: 70%;
+		margin: 20px auto;
+	}
+
+	.profile-card .profile-social-links li{
+		display: table-cell;
+		width: 33.3333333333333333%
+	}
+
+	.profile-card .profile-social-links li a{
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin: 0 10px;
+		border-radius: 100%;
+		-webkit-transition: box-shadow 0.2s;
+		-moz-transition: box-shadow 0.2s;
+		-o-transition: box-shadow 0.2s;
+		transition: box-shadow 0.2s;
+	}
+	.profile-card .profile-social-links li a:hover{
+		box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+	}
+
+	.profile-card .profile-social-links li a:active{
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+	}
+
+	.profile-card .profile-social-links li a img{
+		width: 100%;
+		display: block;
+	}

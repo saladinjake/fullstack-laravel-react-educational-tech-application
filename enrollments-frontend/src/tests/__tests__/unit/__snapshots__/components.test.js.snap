@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackToTop  in the dom shadow should render ServiceBox without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`Breadcrumb  in the dom shadow should render ServiceBox without crashing 1`] = `<BreadcrumbBox />`;
+
+exports[`CourseSlider  in the dom shadow should render without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`FreeCourse  in the dom shadow should render without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`Header  in the dom shadow should render without crashing 1`] = `<UNDEFINED />`;
+
+exports[`PageTitle  in the dom shadow should render ServiceBox without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`ServiceBox  in the dom shadow should render ServiceBox without crashing 1`] = `ShallowWrapper {}`;

@@ -1,0 +1,182 @@
+// .form__group {
+//     padding:1.4rem;
+//     border: $border;
+//     border-radius: 6px;
+//     border-color:$grey-6;
+//     display: flex;
+//     flex-direction:column;
+//     margin-top:1rem;
+//     // background-color: red;
+
+//     label {
+//         @include fontNormal(1.2rem,1.5rem,$grey-6);
+//         margin-bottom: .8rem;
+//     }
+
+//     input,
+//     textarea {
+//         background:transparent;
+//         border: none;
+//         outline:none;
+//         transition: all .2s; 
+//         @include fontNormal(1.6rem,2rem,$grey-3);
+    
+//         &:focus {
+//             outline:none;
+    
+//             &:invalid {
+//              border-bottom:1px solid orangered;
+//             }
+//         }
+    
+//         &::-webkit-input-placeholder {
+//            @include fontNormal(1.6rem,2rem,$grey-3);
+//         }
+//     }
+
+//     .form__group__password {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         input {
+//             width:90%;
+//         }
+
+//         button {
+//             width:3rem;
+//             height:3rem;
+//             @include flexCenter;
+//             outline:none;
+//             border:none;
+//             background-color: transparent;
+//             margin:0;
+
+//             &:hover {
+//                 background-color: rgba($grey-c,0.5);
+//             }
+//         }
+//     }
+
+//     select {
+//         background:transparent;
+//         border: none;
+//         @include fontNormal(1.6rem,2rem,$grey-3);
+//         outline:none;
+//         cursor:pointer;
+//         padding:.8rem 1rem;
+//         width:100%; 
+//         height:4rem;
+//         display: inline-block;
+//         &:-moz-focusring {
+//             color: transparent;
+//             text-shadow: 0 0 0 #000;
+//         }
+
+//         &:-webkit-focusring {
+//             color: transparent;
+//             text-shadow: 0 0 0 #000;
+//         }
+        
+
+//         option {
+//             padding:1rem;
+//             background-color:transparent;
+//             @include fontNormal(1.6rem,2rem,$grey-3);
+//             cursor:pointer;
+//         }
+//     }
+
+//     .range {
+//         display:flex;
+//         justify-content: space-between;
+
+//         input[type="range"] {
+//            flex-basis:80%;
+//         }
+
+//         p {
+//            @include fontNormal(1.6rem,2rem,$grey-3);
+//             margin:0;
+//         }
+
+
+//     }
+// }
+
+
+
+
+// // // Range Slider
+// input[type="range"] {
+//    -webkit-appearance: none;
+//     -moz-appearance: auto;
+//   }
+
+//   input[type="range"]::-webkit-slider-runnable-track {
+//     width: 100%;
+//     height: 5px;
+//     border:none;
+//     border-radius: 5px;  
+//     background: #F1F1F1;
+//     background-color:rgba($grey-c,0.8);
+//     outline: none;
+//     opacity: 0.7;
+//     transition: opacity .2s;
+//   }
+
+//   input[type="range"]::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     appearance: none;
+//     width: 1.5rem;
+//     height: 1.5rem;
+//     border-radius: 50%; 
+//     background: $primary;
+//     cursor: pointer;
+//     transform:translateY(-5px);
+//   }
+
+
+//   //Custom Checkbox
+//   .round {
+//     position: relative;
+
+//     label {
+//         background-color: transparent;
+//         border: 3px solid $white;
+//         border-radius: 50%;
+//         cursor: pointer;
+//         height: 2.2rem;
+//         width: 2.2rem;
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//     }
+
+//     label:after {
+//             border: 2px solid $white;
+//             border-top: none;
+//             border-right: none;
+//             content: "";
+//             width: 1.2rem;
+//             height:.6rem;
+//             position: absolute;
+//             top:42%;
+//             left:50%;
+//             transform:translate(-50%,-50%) rotate(-45deg);
+//             opacity:0 ;
+//     }
+
+//     input[type="checkbox"] {
+//         visibility: hidden;
+//     }
+
+//     input[type="checkbox"]:checked + label {
+//         background-color: $green;
+//     }
+
+//     input[type="checkbox"]:checked + label:after {
+//         opacity: 1;
+//     }
+// }
+  

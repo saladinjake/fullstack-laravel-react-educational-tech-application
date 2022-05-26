@@ -1,0 +1,85 @@
+@mixin flexCenter {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@mixin fontNormal($fs,$lh,$color) {
+    font-family: $primaryFont;
+   font-size:$fs;
+   line-height:$lh;
+   color: $color;
+   font-style: normal;
+   font-weight:400;
+}
+
+@mixin fontBold($fs,$lh,$color) {
+  font-family: $primaryFont;
+   font-size:$fs;
+   line-height:$lh;
+   color: $color;
+   font-style: normal;
+   font-weight: 700;
+}
+
+@mixin btnGeneric {
+    font-family: $primaryFont;
+    outline:none;
+    border:none;
+    border-radius:4px;
+    font-size:1.6rem;
+    font-weight:400;
+    cursor:pointer;
+}
+
+// MEDIA QUERIES
+@mixin  respond($breakpoint) {
+  @if$breakpoint == xm-phone {
+      @media only screen and (max-width:17em) {
+          @content;
+      }//270px
+  }
+
+  @if$breakpoint == misc2 {
+    @media only screen and (max-width:25em) {
+        @content;
+    }//400px
+}
+
+  @if$breakpoint == phone {
+      @media only screen and (max-width:37.5em) {
+          @content;
+      }//600px
+  }
+  
+  @if$breakpoint == misc3 {
+    @media only screen and (max-width:43.75em) {
+        @content;
+    }//700px
+}
+
+  @if$breakpoint == misc1 {
+    @media only screen and (max-width:50em) {
+        @content;
+    }//800
+  }
+
+  @if$breakpoint == tab-port {
+    @media only screen and (max-width:56.25em) {
+        @content;
+    }//900
+}
+
+  @if$breakpoint == tab-land {
+      @media only screen and (max-width:75em) {
+          @content;
+      }//1200
+  }
+
+  @if$breakpoint == big-desktop {
+      @media  only screen and (min-width:112.5em) {
+          @content;
+      }//1800  
+  }
+}
+

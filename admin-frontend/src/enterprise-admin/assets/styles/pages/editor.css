@@ -1,0 +1,117 @@
+.ql-editor {
+  max-height: 200px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background:#fff;
+}
+.quill-blur {
+  display: none;
+}
+@media screen and (min-width: 0) and (max-width: 991px) {
+  .edit-focus .quill {
+    position: absolute;
+    top: 0;
+    height: 226px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+  .edit-focus .quill-blur {
+    display: block;
+    position: absolute;
+    top: 226px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+  .edit-focus .ql-editor {
+    height: 160px;
+    border-bottom: 1px solid #ccc;
+  }
+  .edit-focus .navbar {
+    display: none;
+  }
+  .edit-focus .main-panel {
+    padding: 0 !important;
+  }
+  .edit-focus .main-panel .main-content {
+    min-height: unset !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
+
+
+
+.app {
+  margin: 1rem 4rem;
+}
+
+.app .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+}
+
+/* Snow Theme */
+.app .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/* Bubble Theme */
+.app .ql-bubble .ql-editor {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.app .ql-editor {
+ /* min-height: 18em;*/
+  max-height: 200px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+   border: 2px solid #3333;
+   background:#fff;
+}
+
+.themeSwitcher {
+  margin-top: 0.5em;
+  font-size: small;
+}
+
+
+
+
+input, select, input[type="number"], input[type="text"], .app .ql-editor,  .ql-editor{
+  border: 2px solid #3333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

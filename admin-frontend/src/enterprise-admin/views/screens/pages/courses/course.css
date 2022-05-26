@@ -1,0 +1,442 @@
+.center_div{
+ /* padding-left:150px;
+  position:relative;
+  width:100%;
+  margin:0 auto;*/
+}
+
+@media only screen and (max-width: 600px){
+  .mainForm{
+
+  }
+
+  .center_div{
+    width:100%;
+/*    margin:0 0 15px 0;*/
+  }
+
+  .center_div label{
+    width:100%;
+    float: none;
+    /*margin:0 0 5px 0;*/
+  }
+}
+
+
+
+
+.course .form-group {
+   position: relative;
+   margin-top: 35px;
+   margin-bottom: 20px;
+}
+.course  .input-group {
+   position: relative;
+}
+.course  .form-control, .course input{
+   display: block;
+   height: 36px;
+   width: 100%;
+   /*border: none;
+   border-radius: 0 !important;*/
+   font-size: 16px;
+   font-weight: 300;
+   padding: 20px;
+   background-color: transparent;
+   box-shadow: none;
+   /*border-bottom: 1px solid #757575;*/
+   /*padding:20px;*/
+  
+   margin:10px;
+
+}
+.course  .input-group .form-control {
+   position: relative;
+   z-index: inherit;
+   float: inherit;
+   width: 100%;
+   margin-bottom: 0;
+}
+.course  .form-control:focus {
+   border-color: #757575;
+   outline: none;
+   box-shadow: none;
+}
+.course  label {
+   position: absolute;
+   top: -18px;
+   color: #999;
+   font-size: 12px;
+   font-weight: 300;
+   transition: 0.2s ease all;
+   -moz-transition: 0.2s ease all;
+   -webkit-transition: 0.2s ease all;
+}
+.course  .form-horizontal .control-label {
+   position: relative;
+   top: 0;
+   margin-bottom: 0;
+}
+ @media (min-width: 768px) {
+  .course  .form-horizontal .control-label {
+     font-size: 16px;
+  }
+}
+.course  .float-label {
+   left: 0;
+   top: 7px;
+   font-size: 16px;
+   pointer-events: none;
+}
+.course  .form-control:focus ~ .float-label, .course  .form-control:valid ~ .float-label {
+   top: -18px;
+   font-size: 12px;
+}
+.course  .form-control:focus ~ label {
+   color: #03a9f4;
+}
+.course  .form-control:focus ~ .form-bar:before, .course  .form-control:focus ~ .form-bar:after {
+   background: #03a9f4;
+}
+.course  .form-group .help-block {
+   position: absolute;
+}
+ .course .help-block {
+   color: #bdbdbd;
+   font-size: 12px;
+   font-weight: 300;
+}
+.course  .input-group-addon {
+   border: none;
+   background: transparent;
+}
+.course  .input-group-addon, .form-inline .input-group {
+   display: table-cell;
+}
+.course  .input-group-addon, .input-group-btn {
+   width: inherit;
+}
+.course  .input-group {
+   width: 100%;
+}
+ @media (min-width: 768px) {
+ .course   .form-inline .form-group {
+     margin-top: 16px;
+  }
+  .course  .input-group-btn, .input-group .form-control, .input-group-addon, .form-inline .input-group {
+     display: inline-block;
+  }
+  .course  .input-group {
+     width: auto;
+  }
+}
+.course  .form-bar {
+   position: relative;
+   display: block;
+   width: 100%;
+}
+ .course  .form-bar:before, .form-bar:after {
+   content: '';
+   height: 1px;
+   width: 0;
+   bottom: 0;
+   position: absolute;
+   transition: 0.3s ease all;
+   -moz-transition: 0.3s ease all;
+   -webkit-transition: 0.3s ease all;
+}
+ .course  .form-bar:before {
+   left: 50%;
+}
+ .course  .form-bar:after {
+   right: 50%;
+}
+ .course  .form-control:focus ~ .form-bar:before, .course  .form-control:focus ~ .form-bar:after {
+   width: 50%;
+}
+.course  .form-highlight {
+   position: absolute;
+   height: 60%;
+   width: 60px;
+   top: 25%;
+   left: 0;
+   pointer-events: none;
+   opacity: 0.4;
+}
+.course  .form-control:focus ~ .form-highlight {
+   -webkit-animation: inputHighlighter 0.3s ease;
+   -moz-animation: inputHighlighter 0.3s ease;
+   animation: inputHighlighter 0.3s ease;
+}
+ @-webkit-keyframes inputHighlighter {
+   from {
+     background: #5264AE;
+  }
+   to {
+     width: 0;
+     background: transparent;
+  }
+}
+ @-moz-keyframes inputHighlighter {
+   from {
+     background: #5264AE;
+  }
+   to {
+     width: 0;
+     background: transparent;
+  }
+}
+ @keyframes inputHighlighter {
+   from {
+     background: #5264AE;
+  }
+   to {
+     width: 0;
+     background: transparent;
+  }
+}
+.course  .form-group.checkbox {
+   margin-top: 20px;
+}
+.course  .checkbox input[type='checkbox'] {
+   height: 0;
+   width: 0;
+   opacity: 0;
+}
+.course  .checkbox label {
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 1;
+   display: inline-block;
+   overflow: hidden;
+   position: relative;
+   top: 10px;
+   padding-left: 0;
+}
+.course  .checkbox .chk-span {
+   top: 0;
+   border: 1px solid #5a5a5a;
+   color: #1d1d1d;
+   cursor: pointer;
+   display: inline-block;
+   float: left;
+   height: 14px;
+   margin: 0 14px 14px 1px;
+   outline-color: #eaeaea;
+   padding: 0;
+   position: relative;
+   width: 14px;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   z-index: 1;
+}
+.course  .checkbox .chk-span.checked {
+   top: -2px;
+   border-left: 2px solid #03a9f4;
+   border-bottom: 4px solid #03a9f4;
+   border-top: 1px solid rgba(0,0,0,0);
+   border-right: 1px solid rgba(0,0,0,0);
+   -webkit-transform: rotate(-45deg) scaleY(0.5);
+   -moz-transform: rotate(-45deg) scaleY(0.5);
+   -ms-transform: rotate(-45deg) scaleY(0.5);
+   -o-transform: rotate(-45deg) scaleY(0.5);
+   transform: rotate(-45deg) scaleY(0.5);
+}
+.course  .checkbox .chk-span.checked {
+   border-left-color: #03a9f4;
+   border-bottom-color: #03a9f4;
+}
+ .course  .checkbox input[type='checkbox']:focus ~ label {
+   color: #03a9f4;
+}
+.course  .checkbox input[type='checkbox']:focus ~ label .chk-span {
+   border-color: #03a9f4;
+}
+.course  .checkbox input[type='checkbox']:focus ~ label .chk-span.checked {
+   border-left-color: #03a9f4;
+   border-bottom-color: #03a9f4;
+   border-top: 1px solid rgba(0,0,0,0);
+   border-right: 1px solid rgba(0,0,0,0);
+}
+ @media (min-width: 768px) {
+  .course  .form-inline .radio label, .form-inline .checkbox label {
+     padding-left: 5px;
+  }
+}
+.course  .form-control-static {
+   font-size: 16px;
+}
+.course  .form-control[disabled], .course  .form-control[readonly], .course  fieldset[disabled]  .form-control {
+   background-color: transparent;
+   border-bottom-style: dashed;
+}
+ #focusedInput {
+   border-color: #ccc;
+   border-color: rgba(82,168,236,0.8);
+   outline: 0;
+   box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DIVCARD{  
+        width: 320px;
+        position:relative;
+        /*margin-top: 05%;
+        left: 05%;*/
+        background-color: white;
+        box-shadow: 5px 5px 5px grey;
+        float:left;
+        margin-left:10px;
+
+
+    }
+    /*-----------------     HEADER   ----------------------- */
+    .divHEADER{
+        width: 320px;
+        height: 235px;
+        /*background: url(http://motherboard-images.vice.com/content-images/contentimage/no-id/1465689163118914.jpg) no-repeat;
+        */background-position: 20% 50%;
+        background-size:cover;
+        border-radius: 0 0 0 0 ;
+        transition: all .3s ease-in-out;
+        
+
+    }
+    /* Archeology Icon and Date IN HEADER */
+    .dateHEADER, .bannerBODY {
+        text-transform: uppercase;
+        background-color: #2980b9;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 11px;
+    }
+            /*Archeology Icon on the left*/
+            .bannerBODY {
+                position: absolute;
+                top: -30px;
+                left: 0;
+                padding: 8px 14px;
+                line-height: 14px;
+            }
+             /* Date Icon on the right in Header */
+             .dateHEADER{
+                float: right;
+                border-radius: 50%;
+                padding: 8px 15px;
+                line-height: 15px;
+                margin: 20px 20px 0 0 ;
+             }
+     /*-----------------   MAIN BODY  ----------------------- */
+     .mainBODY {
+        background-color: white;
+        border-radius: 0 0 1px 1px;
+        padding: 0 26px 26px 26px;
+       
+        }
+    /* Header of Body*/
+  .mainBODY  h1 {
+        color: #23282D;
+        letter-spacing: -0.5px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: -5px;
+        }
+   .mainBODY h2{
+        color: #2980b9;
+        margin-top: 1px;
+        font-size: 12px;
+    }
+    .bodyHeader {
+        position: absolute;
+        left: 0;
+        padding: 26px;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+    /*-----------------     FOOTER   ----------------------- */
+    .divFOOTER {
+        position: relative;
+        margin-top: 14px;
+        font-size: 14px;
+        color: #9FA5A8;
+    }
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 20px;
+            }
+    .icon-time{
+        /*background: url('icon-time.png') no-repeat;*/
+        width: 10px;
+        height: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .icon-comment{
+        /*background: url('icon-comment.png') no-repeat;*/
+        width: 15px;
+        height: 20px;
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    /* HIDDEN DESCRIPTION */
+    .BodyDescription{
+        opacity: 0;
+        color: #757B82 ;
+        line-height: 25px;
+        transition: all .1s ease-in-out;
+        margin-left: 27px;
+
+    }
+            /*---------------------------USING TRANSITION ------------------*/
+    
+   .DIVCARD:hover .divHEADER {
+        background-size: 470px 285px;
+        background-position: 10px 10px 0px;
+    }
+    .DIVCARD:hover .cardHeaderHidden {
+        background-color: rgba(0, 0, 0, .6);
+    }
+    .cardHeaderHidden {
+        height: 100%;
+        transition: all .3s ease-in-out;
+    }
+    .DIVCARD:hover .BodyDescription {
+        opacity: 10;
+        transition: all .5s ease-in-out;
+    }
+    .cardHeaderDay {
+        font-size: 18px;
+    }
+    .cardHeaderMonth{
+        font-size: 11px;
+    }
+    .DIVCARD:hover .bodyHeader {
+        margin-top: -150px;
+    }
