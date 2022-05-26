@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\InstructorProfile;
 use App\Models\LearnerProfile;
-
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\Request;
@@ -14,13 +13,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-
 use App\Http\Requests\CreateLearnerRequest;
 use App\Http\Requests\CreateInstructorRequest;
-
 use jeremykenedy\LaravelRoles\Models\Role;
-use App\Mail\UserWelcome; //todo not exisit
-use App\Mail\InstructorWelcome; //to do
+use App\Mail\UserWelcome;
+use App\Mail\InstructorWelcome;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 use Illuminate\Auth\Events\Verified;
 
