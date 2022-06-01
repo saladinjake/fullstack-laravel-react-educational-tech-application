@@ -1,0 +1,96 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
+
+class UpdateLearnerProfileRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        $gender = [
+            'Male', 'Female', 'Prefer Not To Say',
+        ];
+
+        $employment_status = [
+            'Employed', 'Not Employed',
+        ];
+
+        $education_level = [
+            'Primary', 'Secondary', 'Tertiary', 'Postgraduate', 'Diploma', 'High School', 'College', 'A-Level'
+        ];
+
+        $marital_status = [
+            'Single', 'Married', 'Widowed', 'Divorced', 'Seperated'
+        ];
+
+        $this->user = Auth::user();
+        $id = $this->user->id;
+
+        return [
+            'username' => 'required|min:3|max:191|string|unique:users,username,'.$id,
+            'first_name' => 'required|max:191|string',
+            'middle_name' => 'nullable|max:191|string',
+            'last_name' => 'required|max:191|string',
+            //'email' => 'nullable|email|max:191|string|unique:users,email,'.$id,
+            'brief_introduction' => 'nullable|string',
+            'detailed_introduction' => 'nullable|string',
+            'phone_number' => 'required|max:20',
+            'gender' => ['required', Rule::in($gender)],
+            'country_id' => 'required|integer|exists:countries,id',
+            'industry_id' => 'required|integer|exists:industries,id',
+            'category_id' => 'required|integer|exists:categories,id',
+            'date_of_birth' => 'required|date_format:Y-m-d',
+            'employment_status' => ['required', Rule::in($employment_status)],
+            'marital_status' => ['required', Rule::in($marital_status)],
+            'experience_level' => 'required|max:191|string',
+            'education_level' => ['required', Rule::in($education_level)],
+            'degree_obtained' => 'required|max:191|string',
+            'language' => 'required|string|exists:languages,id',
+            'facebook_url' => 'nullable|max:191|url',
+            'linkedin_url' => 'nullable|max:191|url',
+            'twitter_url' => 'nullable|max:191|url',
+            'image_url' => 'nullable|string',
+            'current_employer_name' => 'nullable|max:191|string',
+            'current_employer_designation' => 'nullable|max:191|string',
+            'previous_employer_name' => 'nullable|max:191|string',
+            'previous_employer_designation' => 'nullable|max:191|string',
+            'previous_institutions' => 'nullable|string',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'gender.in' => 'Required gender include Male, Female, or Prefer Not To Say.',
+            'employment_status.in' => 'Required employment status include Employed, or Not Employed.',
+            'education_level.in' => 'Required level of education include Primary, Secondary, Tertiary, Postgraduate, Diploma, High School, College, or A-Level.',
+            'marital_status.in' => 'Required marital status include Single, Married, Widowed, Divorced or Seperated.',
+            'facebook_url.url' => 'The Facebook page url must be a valid URL',
+            'linkedin_url.url' => 'The LinkedIn page url must be a valid URL',
+            'twitter_url.url' => 'The Twitter page url must be a valid URL',
+            'language.exists' => 'The provided language not found',
+            'country_id.exists' => 'The provided country not found',
+            'image_url.mimes' => 'Please insert image with jpeg/png formats only',
+            'image_url.max'   => 'Image should be less than 300 KB',
+            'image_url.dimensions' => 'Image Minimum Dimension is 100x100 and Max Dimension is 150x150',
+        ];
+    }
+}

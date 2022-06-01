@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class CreateProgrammeRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'name' => 'required|max:255|string|unique:programmes,id,'.$this->id,
+            'description' => 'required|string',
+            'certificate_title' => 'nullable|max:255|string', 
+            'programme_levels' => 'required|array',
+            'programme_levels.*.name' => 'required|string|max:255',
+            'programme_levels.*.description' => 'required|string',
+        ];
+    }
+
+    public function messages()
+    {
+        return [   
+            'programme_levels.required' => 'A programme should have levels',
+            'programme_levels.*.name' => 'A programme level name cannot be empty',
+            'programme_levels.*.description' => 'Please add a programme description',
+        ];
+    }
+}
