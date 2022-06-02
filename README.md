@@ -144,13 +144,15 @@ make payments because EMS needs to make profit.
    to present out of the box a good finished production
    ready code well documented and tested.
 
+- features like blogs,post, contact us, featured courses, profile edit, register instructor, upgrade learner to instructor, course management,
+profile management and password reset, admin management are a necessity.
 
    Are you fit for this role? 
   -
 
    ``` Your stack chosen for this task is react the redux way and laravel/php or node js```
 
-- Remember you have 2weeks maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. 
+- Remember you have 2-3weeks maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. 
    GOOD LUCK VICTOR!!!...
 
    Good LUCK AGAIN.
