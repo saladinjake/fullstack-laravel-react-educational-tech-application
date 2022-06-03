@@ -3,10 +3,11 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class InstructorWelcome extends Mailable
+class UserEnrollment extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,10 +17,12 @@ class InstructorWelcome extends Mailable
      * @return void
      */
     private $user;
+    private $course;
 
-    public function __construct($user)
+    public function __construct($user, $course)
     {
         $this->user = $user;
+        $this->course = $course;
     }
 
     /**
@@ -29,11 +32,12 @@ class InstructorWelcome extends Mailable
      */
     public function build()
     {
-        return $this->subject('Welcome to Questence')
-        ->markdown('emails.instructor.welcome')
+        return $this->subject('New Course Enrollment on Questence')
+        ->markdown('emails.user.enrol')
         ->with([
             'user' => $this->user,
-            'url' => config('app.frontend'),
+            'course' => $this->course,
+            'url' => config('app.frontend').'/courses',
         ]);
     }
 }
