@@ -2,7 +2,6 @@ import React, { useEffect, useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderTwo from "../../../components/Header";
-import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
 // import Pagination from "./../../components/Pagination";
 import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/product.js";
@@ -51,8 +50,6 @@ const Product = () => {
         {/* Header 2 */}
         <HeaderTwo />
 
-        {/* Breadcroumb */}
-        <BreadcrumbBox title="Dashboard" />
 
         {/* Products */}
         <section className="product-area">

@@ -3,7 +3,6 @@ import Datas from '../../../data/shop/details.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Tab, Nav, Table } from 'react-bootstrap';
 import HeaderTwo from '../../../components/Header';
-import { BreadcrumbBox } from '../../../components/common/Breadcrumb';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Quantity from './components/Quantity';
@@ -37,8 +36,6 @@ class ProductDetails extends Component {
                     {/* Header 2 */}
                     <HeaderTwo />
 
-                    {/* Breadcroumb */}
-                    <BreadcrumbBox title="Product Details" />
 
                     {/* Product Details */}
                     <section className="product-details-area">

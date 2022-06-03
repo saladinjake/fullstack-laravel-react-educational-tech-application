@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderTwo from "../../../components/Header";
-import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
 import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/account.js";
 import { useHistory } from "react-router-dom";
@@ -111,8 +110,6 @@ const InstructorRegister = () => {
         {/* Header 2 */}
         <HeaderTwo />
 
-        {/* Breadcroumb */}
-        <BreadcrumbBox title="Registration" />
 
         {/* Registration Area */}
         <section className="registration-area">

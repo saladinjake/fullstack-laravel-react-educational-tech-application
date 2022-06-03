@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderTwo from "../../../components/Header";
-import { PageTitle } from "../../../components/common/PageTitle";
+import PageTitle  from "../../../components/common/PageTitle";
 import CourseSidebar from "./components/CourseSidebar";
 import CourseItemGrid from "./components/CourseItemsGrid";
 import FooterTwo from "../../../components/Footer";

@@ -2,7 +2,6 @@ import React, { useEffect, Fragment } from "react";
 import { Container, Row, Col, Table, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import HeaderTwo from "../../../components/Header";
-import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
 import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/cart.js";
 
@@ -43,8 +42,6 @@ const Cart = ({
         {/* Header 2 */}
         <HeaderTwo />
 
-        {/* Breadcroumb */}
-        <BreadcrumbBox title="Cart" />
 
         {/* Product Details */}
         <section className="cart-area">
