@@ -3,24 +3,24 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SendMail extends Mailable
+class UserInquiry extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $token;
+    private $user;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($token, $email)
+    public function __construct($user)
     {
-        $this->token = $token;
-        $this->email = $email;
+        $this->user = $user;
     }
 
     /**
@@ -30,12 +30,11 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Questence Password Reset')
-        ->markdown('emails.auth.resetPassword')
+        return $this->subject($this->user->subject)
+        ->markdown('emails.user.inquiry')
         ->with([
-            'token' => $this->token,
-            'email' => $this->email,
-            'url' => config('app.frontend').'/password/reset',
+            'name' => $this->user->name,
+            'message' => $this->user->message
         ]);
     }
 }

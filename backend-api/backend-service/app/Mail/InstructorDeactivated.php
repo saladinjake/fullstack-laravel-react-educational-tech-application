@@ -3,10 +3,11 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class InstructorWelcome extends Mailable
+class InstructorDeactivated extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -29,11 +30,8 @@ class InstructorWelcome extends Mailable
      */
     public function build()
     {
-        return $this->subject('Welcome to Questence')
-        ->markdown('emails.instructor.welcome')
-        ->with([
-            'user' => $this->user,
-            'url' => config('app.frontend'),
-        ]);
+        $user = $this->user;
+
+        return $this->subject('Instructor Account Deactivated')->markdown('emails.instructor.deactivated')->with(compact('user'));
     }
 }
