@@ -1,7 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import HeaderTwo from "../../../components/Header";
-import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
 import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/course.js";
 import moment from "moment";
@@ -74,10 +73,6 @@ const CourseDetails = ({ match, cart: { cart }, addToCart, fetchCourses }) => {
       {/* Header 2 */}
       <HeaderTwo />
 
-      {/* Breadcroumb */}
-      {Object.entries(coursedetails).length !== 0 && (
-        <BreadcrumbBox title={coursedetails.data.category.name} />
-      )}
 
       <Styles>
         {/* Course Details */}

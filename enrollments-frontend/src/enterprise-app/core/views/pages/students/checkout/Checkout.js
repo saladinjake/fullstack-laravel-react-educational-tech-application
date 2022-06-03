@@ -1,7 +1,6 @@
 import React, { Fragment,useState} from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import HeaderTwo from "../../../components/Header";
-import { BreadcrumbBox } from "../../../components/common/Breadcrumb";
 import FooterTwo from "../../../components/Footer";
 import { Styles } from "./styles/checkout.js";
 
@@ -58,9 +57,6 @@ const Checkout = ({ cart: { cart, total }, auth: { user } }) => {
       <div className="main-wrapper about-page">
         {/* Header 2 */}
         <HeaderTwo />
-
-        {/* Breadcroumb */}
-        <BreadcrumbBox title="Checkout" />
 
         <Container>
           <Row>
