@@ -35,6 +35,7 @@ Route::prefix('v1')->group(function () {
             Route::post('login', 'Auth\ApiAuthController@login');
             Route::post('/reset-password-request', 'Auth\ForgotPasswordController@sendPasswordResetEmail');
             Route::post('/password/reset', 'Auth\ResetPasswordController@reset');
+            Route::post('register', 'Auth\ApiAuthController@register');
         });
 
         Route::prefix('countries')->group(function () {
@@ -58,7 +59,7 @@ Route::prefix('v1')->group(function () {
         });
 
         Route::prefix('learners')->group(function () {
-            Route::post('register', 'Auth\ApiAuthController@register');
+            
         });
 
         Route::prefix('instructors')->group(function () {
