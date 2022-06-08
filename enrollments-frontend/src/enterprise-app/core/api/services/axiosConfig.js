@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 // set base url for production or dev
-let baseURL = process.env.API_URL2
-  ? process.env.API_URL2
-  : "https://somewhereinheroku.com/api/v1/";
+let baseURL = process.env.REACT_APP_API_URL
+  ? process.env.REACT_APP_API_URL
+  : "http://localhost:8000/api/v1";
 let token;
 
 
