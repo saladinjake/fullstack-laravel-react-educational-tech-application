@@ -1,8 +1,25 @@
 ##Senior Full stack react app/Senior Frontend/Backend ## --REACT-WITH-ME (E-LEARNING-ENROLLMENT-APPLICATION)
 
-## LINKS TO YOUR SOLUTION: place the url links to your solutions, eg user frontend url, admin frontend url, swagger url , backend url endpoint  as well as admin user name and password.
+## HOW TO RUN TO YOUR SOLUTION:.
+- CLONE OR DOWNLOAD THE REPO
 
+## backend
+- CD INTO backend-api/backend-service  and run the commands
+- composer install --ignore-platform-reqs
+- php artisan migrate
+- php artisan passport:client --personal
+- php artisan db:seed
+- php artisan serve
 
+## admin
+- cd to admin-frontend run the commands-
+- npm install --legacy-peer-deps
+- npm start
+
+## frontend
+- cd in to enrollment-frontend and run 
+- npm install --legacy-peer-deps
+- npm start
 ##PROBLEM SCENARIO
 
 - Ali Mohammed Alvin Turuk a client 
