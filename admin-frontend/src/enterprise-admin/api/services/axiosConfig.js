@@ -1,7 +1,7 @@
 import axios from 'axios';
-let baseURL = process.env.API_URL2
-  ? process.env.API_URL2
-  : "https://questence.tqfe.net/api/v1/";
+let baseURL = process.env.REACT_APP_API_URL
+  ? process.env.REACT_APP_API_URL
+  : "http://localhost:8000/api/v1/";
 let token;
 
 axios.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';

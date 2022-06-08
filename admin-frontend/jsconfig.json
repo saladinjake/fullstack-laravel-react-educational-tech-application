@@ -4,12 +4,6 @@
    "compilerOptions": {
      "baseUrl": ".",
      "paths": {
-      "@questence/api/*": ["./enterprise-admin/api/services/*"],
-      "@questence/api/config": ["./enterprise-admin/api/configs/*"],
-      "@questence/core/*": ["./enterprise-admin/core/*"],
-      "@questence/assets/*": ["./enterprise-admin/assets/*"],
-      "@questence/components/*": ["./enterprise-admin/views/components/*"],
-      "@questence/pages/*": ["./enterprise-admin/views/pages/*"]
      
      }
    },
