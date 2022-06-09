@@ -20,6 +20,22 @@
 - cd in to enrollment-frontend and run 
 - npm install --legacy-peer-deps
 - npm start
+
+## deployments backend
+heroku login
+heroku create app elearning-service-enpoint
+git push heroku master
+heroku config:add ENV_CONFIG=value
+heroku mysql:credentials:url
+heroku run php artisan migrate
+heroku run php artisan db:seed
+
+
+## deployments frontend
+
+
+git subtree push --prefix backend-api/backend-service heroku master
+
 ##PROBLEM SCENARIO
 
 - Ali Mohammed Alvin Turuk a client 
@@ -169,8 +185,6 @@ profile management and password reset, admin management are a necessity.
 
    ``` Your stack chosen for this task is react the redux way and laravel/php or node js```
 
-- Remember you have 2-3weeks maximum to deliver a functioning prototype as a proof you can handle such senior full stack role. 
+ 
    GOOD LUCK VICTOR!!!...
 
-   Good LUCK AGAIN.
-   MICK DURHAM.
