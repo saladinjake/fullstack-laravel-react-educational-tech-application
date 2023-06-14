@@ -38,7 +38,7 @@ git subtree push --prefix backend-api/backend-service heroku master
 
 ##PROBLEM SCENARIO
 
-- Ali Mohammed Alvin Turuk a client 
+- Ali Mohammed  a client 
 who is a very busy person, has decided that he would 
 want to build an application that will
 enable him reach out to more 
@@ -88,21 +88,6 @@ the user being able to  manage profile, manage account settings, enrol for a cou
 see his cart, add to wishlist, checkout and
 make payments because EMS needs to make profit.
  
-- Finally I need proper code documentation for the future 
-  
-- These were his words after the discussion 
-  held with Ali Mohammed prior to the last meeting held 
-  with the outsourcing team:  """I will give
-  you more details if i have more time. But I need 
-  it up and running as soon as possible. 
-  A quick functioning application and must
-  be with the latest technological trend. React atleast!!!
-  I know you understand what I mean? 
-  You are a professional and I presume 
-  you do have in place a team with such
-  outstanding expertise to can carry 
-  out the nitty gritty assignment and 
-  make this happen Right or wrong???"""
 
 
 - With this information , you as an aspiring Senior
